@@ -1,0 +1,949 @@
+/*
+Theme Name: Enyoi
+Author: miroku
+Author URI: https://profiles.wordpress.org/369work/
+Description: Enyoi is a modern, minimalistic WordPress theme designed for full site editing. It features a clean layout, responsive design, and is optimized for performance. Perfect for beauty salons, and small business websites.
+Version: 1.0
+Requires at least: 6.6
+Tested up to: 6.8
+Requires PHP: 8.1
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: blog, custom-logo, editor-style, featured-images, full-site-editing, theme-options, translation-ready
+Text Domain: enyoi
+Domain Path: /languages
+*/
+
+/** Reset **/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+:root :where(.wp-block-group) {
+    padding: 0;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+:where(.wp-site-blocks)>*,
+:root :where(.is-layout-constrained)>*,
+:root :where(.is-layout-flow)>* {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.wp-block-post {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 1rem;
+}
+
+:where(.wp-block-group.has-background) {
+    padding: 0;
+}
+
+.wp-block-navigation-item a {
+    text-decoration: none;
+    color: inherit;
+    padding: .5rem 1rem;
+}
+
+.wp-block-post-comments-form h3.comment-reply-title {
+    font-size: 1.5rem;
+    color: #005A9C;
+}
+
+
+
+h2.wp-block-heading:not(.section-title),
+h3.wp-block-heading:not(.section-title),
+.wp-block-post-comments-form h3.comment-reply-title {
+    margin-bottom: 1rem;
+}
+
+h3.wp-block-heading:not(.category-title) {
+    margin-bottom: 1rem;
+}
+
+.wp-block-navigation__responsive-container-open.wp-block-navigation__responsive-container-open.wp-block-navigation__responsive-container-open:hover {
+    color: #00CFFF;
+}
+
+.wp-block-navigation__responsive-container-close svg, .wp-block-navigation__responsive-container-open svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.wp-block-navigation__responsive-container {
+    display: none;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 250px;
+    inset: 0;
+}
+
+
+.wp-block-button__link {
+    transition: background-color 0.3s ease;
+}
+
+.wp-block-button__link:hover {
+    color: #fff;
+    opacity: 0.8;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    border-radius: .5rem;
+}
+
+.wp-block-button:hover {
+    /* 見出しブロックのスタイル名と類似 */
+    background-color: #0ea5e9;
+    color: #fff;
+    opacity: 0.8;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    border-radius: .5rem;
+}
+
+h2.wp-block-post-title {
+    text-align: left;
+    color: #8b5cf6;
+
+}
+
+.wp-block-post-terms {
+    font-size: 0.9rem;
+}
+
+.form-submit {
+    margin: 1rem 0;
+}
+
+button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+/* Enyoi Style */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    line-height: 1.6;
+}
+
+.wp-site-blocks {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    z-index: 100;
+    position: relative;
+    padding: 0;
+}
+
+.is-layout-flex.header-logo {
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+:root :where(.is-layout-flex).logo-wrap {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.wp-block-site-tagline {
+    line-height: 1.2;
+}
+
+header h1.title-logo {
+    text-align: left;
+    margin-left: 0;
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    position: relative;
+    padding: 0;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 .5rem;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-inner {
+    margin: 0;
+    padding: 0 .5rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .block-inner {
+        margin: 0;
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #ede9fe;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s ease;
+    opacity: 0;
+}
+
+.skip-link.screen-reader-text:focus {
+    top: 0;
+    opacity: 1;
+    background-color: #ede9fe;
+}
+
+
+
+/* ユーティリティクラス */
+.enyoi-p-1 {
+    padding: 1rem;
+}
+
+.enyoi-p-2 {
+    padding: 1.5rem;
+}
+
+.enyoi-p-3 {
+    padding: 2rem;
+}
+
+.enyoi-py-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.enyoi-mb-1 {
+    margin-bottom: 1rem;
+}
+
+.enyoi-mb-2 {
+    margin-bottom: 2rem;
+}
+
+
+/* グリッドレイアウト */
+.enyoi-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.enyoi-grid-3 {
+    grid-template-columns: 1fr;
+}
+
+.enyoi-grid-2 {
+    grid-template-columns: 1fr;
+}
+
+/* Flexレイアウト */
+.enyoi-flex-v {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.enyoi-flex-h {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* カード共通スタイル */
+.enyoi-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.enyoi-card:hover {
+    transform: translateY(-4px);
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+
+/* レスポンシブ対応 */
+@media (min-width: 768px) {
+    .enyoi-grid-3 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .enyoi-grid-2 {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .mobile-hidden {
+        display: block;
+    }
+
+}
+
+.menu-heading-ja {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.menu-heading-en {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    text-transform: uppercase;
+}
+
+.is-style-enyoi-button:hover {
+    background-color: #047857;
+}
+
+
+/*** footer ***/
+/* Mobile First - デフォルトはモバイル向けスタイル */
+.footer-content {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.footer-brand {
+    max-width: 100%;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.social-link:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.footer-section h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(-50%);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    padding-left: 0;
+}
+
+.footer-links a::before {
+    display: none;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-links a:hover::before {
+    background-color: #fff;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 8px;
+}
+
+.footer-contact i {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+}
+
+/* タブレット向けスタイル (576px以上) */
+@media (min-width: 576px) {
+    .footer-content {
+        margin-bottom: 40px;
+        padding: 0 30px;
+    }
+
+    .footer-logo {
+        font-size: 2.2rem;
+        letter-spacing: 2.5px;
+        margin-bottom: 22px;
+    }
+
+    .footer-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 28px;
+        letter-spacing: 0.4px;
+    }
+
+    .footer-social {
+        gap: 18px;
+    }
+
+    .social-link {
+        font-size: 1.4rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.15rem;
+        letter-spacing: 1.8px;
+        margin-bottom: 28px;
+        padding-bottom: 14px;
+    }
+
+    .footer-links a {
+        font-size: 0.92rem;
+    }
+
+    .footer-contact ul li {
+        font-size: 0.92rem;
+        margin-bottom: 14px;
+        gap: 9px;
+        list-style: none;
+    }
+
+    .footer-contact i {
+        font-size: 1.05rem;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 35px;
+        font-size: 0.85rem;
+        letter-spacing: 0.9px;
+    }
+}
+
+/* タブレット大画面向けスタイル (768px以上) */
+@media (min-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 50px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+}
+
+/* デスクトップ向けスタイル (992px以上) */
+@media (min-width: 992px) {
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        margin-bottom: 60px;
+        text-align: left;
+        gap: 0;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+        text-align: left;
+        max-width: 400px;
+    }
+
+    .footer-logo {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+        margin-bottom: 24px;
+    }
+
+    .footer-description {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        letter-spacing: 0.5px;
+    }
+
+    .footer-social {
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .social-link {
+        font-size: 1.5rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+    }
+
+    .footer-section h3::after {
+        left: 0;
+        transform: none;
+    }
+
+    .footer-section nav>ul {
+        gap: .5rem;
+    }
+
+    .footer-links a {
+        font-size: 0.95rem;
+        padding-left: 15px;
+    }
+
+    .footer-links a::before {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 4px;
+        height: 4px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        transform: translateX(5px);
+    }
+
+    .footer-contact p {
+        justify-content: flex-start;
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+        gap: 10px;
+    }
+
+    .footer-contact i {
+        font-size: 1.1rem;
+    }
+
+    .footer-bottom {
+        padding-top: 40px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* セクション共通スタイル - モバイルファースト */
+.section {
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5rem !important;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #2c3e50;
+}
+
+.section-title span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.section-title span::after {
+    content: attr(data-subtitle);
+    font-size: 0.4em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #e67e22;
+    opacity: 0.8;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg,
+            rgba(230, 126, 34, 0) 0%,
+            rgba(230, 126, 34, 0.8) 50%,
+            rgba(230, 126, 34, 0) 100%);
+}
+
+
+/* タブレット以上のサイズ */
+@media (min-width: 768px) {
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 6rem !important;
+        gap: 12px;
+    }
+
+}
+
+/* デスクトップサイズ */
+@media (min-width: 1024px) {
+    .section {
+        padding: 8rem 0;
+    }
+}
+
+.section-bg-white {
+    background-color: white;
+}
+
+.section-bg-gray {
+    background-color: #fafafa;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2px;
+    border: none;
+    font-size: 1rem;
+    color: #2c3e50;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    background-color: white;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-button {
+    width: 100%;
+    background-color: #0077C8;
+    color: #fff;
+    padding: 1rem 0;
+    border-radius: 2px;
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    margin-bottom: 1.25rem;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    margin-bottom: 1.25rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+        margin-bottom: 35px;
+    }
+
+    h3 {
+        font-size: clamp(1.4rem, 2.8vw, 1.8rem);
+    }
+}
+
+.wp-block-site-tagline {
+    white-space: pre-line;
+}
+
+:root :where(.is-layout-flex) {
+    gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    :root :where(.is-layout-flex) {
+        gap: 1.5rem;
+    }
+}
+
+.is-layout-flex {
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* アニメーション */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav a:hover,
+.footer-logo a:hover,
+.footer-logo a.wp-block-pages-list__item__link .wp-block-navigation-item__content {
+    color: #00CFFF;
+    text-decoration: underline;
+}
+
+.single-page {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem .5rem;
+}
+
+@media (min-width: 768px) {
+    .single-page {
+        padding: 3rem 2rem;
+    }
+}
+@media (min-width: 1440px) {
+    .single-page {
+        padding: 4rem;
+    }
+}

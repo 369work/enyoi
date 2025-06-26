@@ -1,0 +1,472 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: enyoi10.\n"
+"POT-Creation-Date: 2025-06-26 17:33+0900\n"
+"PO-Revision-Date: 2025-06-26 17:33+0900\n"
+"Last-Translator: 369work\n"
+"Language-Team: 369work\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_x;_n;esc_html_e;esc_html_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: functions.php:44 functions.php:113
+msgid "Enyoi Header Menu"
+msgstr ""
+
+#: functions.php:45 functions.php:134
+msgid "Enyoi Footer Menu"
+msgstr ""
+
+#: functions.php:50
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:52
+msgid "Widgets in this area will be shown on all posts and pages."
+msgstr ""
+
+#: functions.php:66
+msgid "Enyoi Patterns"
+msgstr ""
+
+#: functions.php:67
+msgid "Enyoi pattern collection"
+msgstr ""
+
+#: functions.php:126
+msgid "Home"
+msgstr ""
+
+#: functions.php:147
+msgid "Privacy Policy"
+msgstr ""
+
+#: inc/customizer.php:9
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer.php:21
+msgid "Custom Logo"
+msgstr ""
+
+#: inc/customizer.php:28
+msgid "Enyoi Store Settings"
+msgstr ""
+
+#: inc/customizer.php:39
+msgid "Store Location"
+msgstr ""
+
+#: inc/customizer.php:51
+msgid "Store Phone Number"
+msgstr ""
+
+#: inc/customizer.php:63
+msgid "Store Opening Time"
+msgstr ""
+
+#: inc/customizer.php:75
+msgid "Store Closing Time"
+msgstr ""
+
+#: inc/customizer.php:86
+msgid "Store Holiday"
+msgstr ""
+
+#: inc/customizer.php:98
+msgid "Nearest Station"
+msgstr ""
+
+#: inc/customizer.php:110
+msgid "YouTube Link"
+msgstr ""
+
+#: inc/customizer.php:122
+msgid "Instagram Link"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "Twitter Link"
+msgstr ""
+
+#: inc/customizer.php:146
+msgid "Facebook Link"
+msgstr ""
+
+#: patterns/blog-post.php:14
+msgid "最新の投稿"
+msgstr ""
+
+#: patterns/blog-post.php:38
+msgid "詳しく見る"
+msgstr ""
+
+#: patterns/blog-post.php:46 patterns/query-loop-list.php:30
+#: patterns/query-loop.php:30
+msgid ""
+"申し訳ございませんが、何も見つかりませんでした。別のキーワードで検索してみて"
+"ください。"
+msgstr ""
+
+#: patterns/comments.php:12
+msgid "コメント"
+msgstr ""
+
+#: patterns/contact-section.php:12
+msgid "ご予約について"
+msgstr ""
+
+#: patterns/contact-section.php:24
+msgid "お電話"
+msgstr ""
+
+#: patterns/contact-section.php:28
+msgid "ご予約やお問い合わせはお電話でも承っております。"
+msgstr ""
+
+#: patterns/contact-section.php:32 patterns/footer-main.php:86
+msgid "03-0000-0000"
+msgstr ""
+
+#: patterns/contact-section.php:36
+msgid "受付時間"
+msgstr ""
+
+#: patterns/contact-section.php:36 patterns/footer-main.php:90
+msgid "10:00"
+msgstr ""
+
+#: patterns/contact-section.php:36 patterns/footer-main.php:90
+msgid "20:00"
+msgstr ""
+
+#: patterns/contact-section.php:47
+msgid "メール"
+msgstr ""
+
+#: patterns/contact-section.php:51
+msgid "お問い合わせフォームからメッセージをお送りください。"
+msgstr ""
+
+#: patterns/contact-section.php:55
+msgid "お問い合わせフォーム"
+msgstr ""
+
+#: patterns/footer-main.php:26
+msgid ""
+"With the best techniques and space, we will bring out your beauty. We offer "
+"relaxation for the mind and body and help you discover a new you."
+msgstr ""
+
+#: patterns/footer-main.php:47 patterns/menu-section.php:13
+msgid "メニュー"
+msgstr ""
+
+#: patterns/footer-main.php:63
+msgid "サロン"
+msgstr ""
+
+#: patterns/footer-main.php:77
+msgid "お問い合わせ"
+msgstr ""
+
+#: patterns/footer-main.php:82
+msgid "東京都渋谷区神宮前1"
+msgstr ""
+
+#: patterns/footer-main.php:90
+msgid "定休日"
+msgstr ""
+
+#: patterns/footer-main.php:90
+msgid "火曜日"
+msgstr ""
+
+#: patterns/footer-main.php:94
+msgid "最寄り駅"
+msgstr ""
+
+#: patterns/footer-main.php:94
+msgid "明治神宮前 徒歩4分"
+msgstr ""
+
+#: patterns/hero-section.php:12
+msgid "美しさを<br>追求する<br>サロン"
+msgstr ""
+
+#: patterns/hero-section.php:16
+msgid "最高の技術と空間で、あなたの美しさを引き出します。"
+msgstr ""
+
+#: patterns/hero-section.php:35
+msgid "￥5,000"
+msgstr ""
+
+#: patterns/hero-section.php:39
+msgid "￥8,000"
+msgstr ""
+
+#: patterns/hero-section.php:43
+msgid "￥10,000"
+msgstr ""
+
+#: patterns/menu-section.php:19
+msgid "カット・スタイリング"
+msgstr ""
+
+#: patterns/menu-section.php:25
+msgid "レディースカット"
+msgstr ""
+
+#: patterns/menu-section.php:29
+msgid "トレンドを取り入れたスタイルからお客様に似合うカットまで"
+msgstr ""
+
+#: patterns/menu-section.php:33 patterns/menu-section.php:118
+msgid "￥4,500〜"
+msgstr ""
+
+#: patterns/menu-section.php:40
+msgid "メンズカット"
+msgstr ""
+
+#: patterns/menu-section.php:44
+msgid "ビジネスシーンにも対応した洗練されたスタイル"
+msgstr ""
+
+#: patterns/menu-section.php:48
+msgid "￥3,500〜"
+msgstr ""
+
+#: patterns/menu-section.php:55
+msgid "シャンプー・ブロー"
+msgstr ""
+
+#: patterns/menu-section.php:59
+msgid "頭皮ケアとスタイリングでリフレッシュ"
+msgstr ""
+
+#: patterns/menu-section.php:63 patterns/menu-section.php:228
+msgid "￥2,500"
+msgstr ""
+
+#: patterns/menu-section.php:74
+msgid "カラーリング"
+msgstr ""
+
+#: patterns/menu-section.php:80
+msgid "フルカラー"
+msgstr ""
+
+#: patterns/menu-section.php:84
+msgid "全体的なカラーチェンジで印象を一新"
+msgstr ""
+
+#: patterns/menu-section.php:88
+msgid "￥6,500〜"
+msgstr ""
+
+#: patterns/menu-section.php:95
+msgid "ハイライト・ローライト"
+msgstr ""
+
+#: patterns/menu-section.php:99
+msgid "立体感と奥行きのある仕上がり"
+msgstr ""
+
+#: patterns/menu-section.php:103 patterns/menu-section.php:173
+msgid "￥8,500〜"
+msgstr ""
+
+#: patterns/menu-section.php:110
+msgid "リタッチカラー"
+msgstr ""
+
+#: patterns/menu-section.php:114
+msgid "根元の気になる部分をしっかりカバー"
+msgstr ""
+
+#: patterns/menu-section.php:129
+msgid "パーマ・ストレート"
+msgstr ""
+
+#: patterns/menu-section.php:135
+msgid "デジタルパーマ"
+msgstr ""
+
+#: patterns/menu-section.php:139
+msgid "持続性の高い美しいカールスタイル"
+msgstr ""
+
+#: patterns/menu-section.php:143
+msgid "￥9,500〜"
+msgstr ""
+
+#: patterns/menu-section.php:150
+msgid "縮毛矯正"
+msgstr ""
+
+#: patterns/menu-section.php:154
+msgid "くせ毛を自然なストレートヘアに"
+msgstr ""
+
+#: patterns/menu-section.php:158
+msgid "￥12,000〜"
+msgstr ""
+
+#: patterns/menu-section.php:165
+msgid "エアウェーブ"
+msgstr ""
+
+#: patterns/menu-section.php:169
+msgid "ふんわり自然なウェーブスタイル"
+msgstr ""
+
+#: patterns/menu-section.php:184
+msgid "ヘッドスパ・トリートメント"
+msgstr ""
+
+#: patterns/menu-section.php:190
+msgid "リラクゼーションスパ"
+msgstr ""
+
+#: patterns/menu-section.php:194
+msgid "頭皮マッサージでリラックス効果"
+msgstr ""
+
+#: patterns/menu-section.php:198
+msgid "￥3,500"
+msgstr ""
+
+#: patterns/menu-section.php:205
+msgid "集中補修トリートメント"
+msgstr ""
+
+#: patterns/menu-section.php:209
+msgid "ダメージヘアを集中的にケア"
+msgstr ""
+
+#: patterns/menu-section.php:213
+msgid "￥4,500"
+msgstr ""
+
+#: patterns/menu-section.php:220
+msgid "炭酸スパ"
+msgstr ""
+
+#: patterns/menu-section.php:224
+msgid "炭酸効果で頭皮環境を改善"
+msgstr ""
+
+#: patterns/more-posts.php:15
+msgid "その他の投稿"
+msgstr ""
+
+#: patterns/news-section.php:14
+msgid "お知らせ"
+msgstr ""
+
+#: patterns/news-section.php:26
+msgid "春の新メニュー登場"
+msgstr ""
+
+#: patterns/news-section.php:30
+msgid "春の新作ヘアスタイルと、季節限定のヘッドスパメニューが登場しました。"
+msgstr ""
+
+#: patterns/news-section.php:34 patterns/news-section.php:54
+msgid "詳細を見る"
+msgstr ""
+
+#: patterns/news-section.php:46
+msgid "新スタイリスト加入のお知らせ"
+msgstr ""
+
+#: patterns/news-section.php:50
+msgid "新たに2名のスタイリストが加入いたしました。"
+msgstr ""
+
+#: patterns/page-404.php:22
+msgid "申し訳ありませんが、お探しのページは存在しません。"
+msgstr ""
+
+#: patterns/page-404.php:25
+#, php-format
+msgid "%sに戻るか、他のワードを検索してみてください。"
+msgstr ""
+
+#: patterns/page-404.php:25
+msgid "TOP"
+msgstr ""
+
+#: patterns/salon-section.php:12
+msgid "サロンについて"
+msgstr ""
+
+#: patterns/salon-section.php:18
+msgid ""
+"Salon Eleganceは、お客様一人ひとりの個性と美しさを大切にし、<br>最新のトレン"
+"ドと技術を取り入れたヘアスタイルをご提案いたします。<br>リラックスできる空間"
+"で、心地よいサロンタイムをお過ごしください。"
+msgstr ""
+
+#: patterns/salon-section.php:33
+msgid "高い技術力"
+msgstr ""
+
+#: patterns/salon-section.php:37
+msgid "経験豊富なスタイリストが最新技術でお応えします"
+msgstr ""
+
+#: patterns/salon-section.php:51
+msgid "上質な空間"
+msgstr ""
+
+#: patterns/salon-section.php:55
+msgid "落ち着いた雰囲気でリラックスしてお過ごしいただけます"
+msgstr ""
+
+#: patterns/salon-section.php:69
+msgid "丁寧なカウンセリング"
+msgstr ""
+
+#: patterns/salon-section.php:73
+msgid "お客様のご要望を詳しくお聞きし、最適なスタイルを提案"
+msgstr ""
+
+#: patterns/staff-section.php:14
+msgid "スタッフ紹介"
+msgstr ""
+
+#: patterns/staff-section.php:26
+msgid "田中 美穂"
+msgstr ""
+
+#: patterns/staff-section.php:30
+msgid "チーフスタイリスト"
+msgstr ""
+
+#: patterns/staff-section.php:34
+msgid ""
+"15年の経験を持つベテランスタイリスト。トレンドを押さえたスタイル提案が得意で"
+"す。"
+msgstr ""
+
+#: patterns/staff-section.php:46
+msgid "佐藤 健太"
+msgstr ""
+
+#: patterns/staff-section.php:50
+msgid "スタイリスト"
+msgstr ""
+
+#: patterns/staff-section.php:54
+msgid ""
+"メンズカットとカラーリングのスペシャリスト。お客様のライフスタイルに合わせた"
+"スタイルを提案。"
+msgstr ""
