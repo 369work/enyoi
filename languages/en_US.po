@@ -108,9 +108,7 @@ msgstr ""
 
 #: patterns/blog-post.php:46 patterns/query-loop-list.php:30
 #: patterns/query-loop.php:30
-msgid ""
-"申し訳ございませんが、何も見つかりませんでした。別のキーワードで検索してみて"
-"ください。"
+msgid "申し訳ございませんが、何も見つかりませんでした。別のキーワードで検索してみてください。"
 msgstr ""
 
 #: patterns/comments.php:12
@@ -158,9 +156,7 @@ msgid "お問い合わせフォーム"
 msgstr ""
 
 #: patterns/footer-main.php:26
-msgid ""
-"With the best techniques and space, we will bring out your beauty. We offer "
-"relaxation for the mind and body and help you discover a new you."
+msgid "With the best techniques and space, we will bring out your beauty. We offer relaxation for the mind and body and help you discover a new you."
 msgstr ""
 
 #: patterns/footer-main.php:47 patterns/menu-section.php:13
@@ -409,10 +405,7 @@ msgid "サロンについて"
 msgstr ""
 
 #: patterns/salon-section.php:18
-msgid ""
-"Salon Eleganceは、お客様一人ひとりの個性と美しさを大切にし、<br>最新のトレン"
-"ドと技術を取り入れたヘアスタイルをご提案いたします。<br>リラックスできる空間"
-"で、心地よいサロンタイムをお過ごしください。"
+msgid "お客様一人ひとりの個性と美しさを大切にし、最新のトレンドと技術を取り入れたヘアスタイルをご提案いたします。リラックスできる空間で、心地よいサロンタイムをお過ごしください。"
 msgstr ""
 
 #: patterns/salon-section.php:33
@@ -452,9 +445,7 @@ msgid "チーフスタイリスト"
 msgstr ""
 
 #: patterns/staff-section.php:34
-msgid ""
-"15年の経験を持つベテランスタイリスト。トレンドを押さえたスタイル提案が得意で"
-"す。"
+msgid "15年の経験を持つベテランスタイリスト。トレンドを押さえたスタイル提案が得意です。"
 msgstr ""
 
 #: patterns/staff-section.php:46
@@ -466,7 +457,5 @@ msgid "スタイリスト"
 msgstr ""
 
 #: patterns/staff-section.php:54
-msgid ""
-"メンズカットとカラーリングのスペシャリスト。お客様のライフスタイルに合わせた"
-"スタイルを提案。"
+msgid "メンズカットとカラーリングのスペシャリスト。お客様のライフスタイルに合わせたスタイルを提案。"
 msgstr ""
