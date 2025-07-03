@@ -15,7 +15,7 @@
         <!-- /wp:spacer -->
 
         <!-- wp:heading {"textAlign":"center","level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|accent"}}}},"textColor":"accent","fontSize":"5x-large"} -->
-        <h1 class="wp-block-heading has-text-align-center has-accent-color has-text-color has-link-color has-5-x-large-font-size">404</h1>
+        <h1 class="wp-block-heading has-text-align-center has-accent-color has-text-color has-link-color has-5-x-large-font-size"><?php esc_html_e('404', 'enyoi'); ?></h1>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|text-light"}}}},"textColor":"text-light"} -->

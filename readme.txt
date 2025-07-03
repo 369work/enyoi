@@ -3,12 +3,12 @@
 Theme Name: Enyoi
 Contributors: miroku
 Author URI: https://profiles.wordpress.org/369work/
-Tags: blob, custom-logo, editor-style, featured-images, full-site-editing, theme-options, translation-ready
+Tags: block-patterns, block-styles, one-column, custom-logo, editor-style, featured-images, full-site-editing, translation-ready
 Requires at least: 6.6
 Tested up to: 6.8
 Requires PHP: 8.1
-Stable tag: 1.0
-License: GPLv3 or later
+Stable tag: 1.1
+License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Enyoi is a modern, minimalistic WordPress theme designed for full site editing. It features a clean layout, responsive design, and is optimized for performance. Perfect for beauty salons, and small business websites.
@@ -59,16 +59,22 @@ Yes, the theme supports WordPress custom menus.
 = Is this theme responsive? =
 Yes, Enyoi is fully responsive and mobile-friendly.
 
+
+== Bundles ==
+
+* All images used in this theme are created by 369work and licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
+* Screenshot : Copyright 369work. licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
+* Background Image(hero-background.webp) : Copyright 369work. licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
+* Icon(user.webp) : Copyright 369work. licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
+
+
+
 == Changelog ==
 
 = 1.0.0 =
 * Initial release
 
-== Credits ==
-
-* Built with WordPress standards
-* Image and screenshot : Copyright 369work(https://369work.net). licensed under CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
-
-== Support ==
-
-For support and questions, please visit the theme documentation or contact support.
+= 1.1 =
+* Bug fixed
+* Remove functions
+* license fixed

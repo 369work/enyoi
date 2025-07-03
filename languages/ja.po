@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: enyoi1.0\n"
-"POT-Creation-Date: 2025-06-26 19:48+0900\n"
-"PO-Revision-Date: 2025-06-26 20:10+0900\n"
+"POT-Creation-Date: 2025-07-02 14:19+0900\n"
+"PO-Revision-Date: 2025-07-02 14:20+0900\n"
 "Last-Translator: 369work\n"
 "Language-Team: 369work\n"
 "Language: ja\n"
@@ -14,89 +14,13 @@ msgstr ""
 "X-Poedit-KeywordsList: _e;_n;_x;__;esc_html_e;esc_html_x\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: functions.php:44 functions.php:113
-msgid "Enyoi Header Menu"
-msgstr "Enyoi ヘッダーメニュー"
-
-#: functions.php:45 functions.php:134
-msgid "Enyoi Footer Menu"
-msgstr "Enyoi フッターメニュー"
-
-#: functions.php:50
-msgid "Sidebar"
-msgstr "サイドバー"
-
-#: functions.php:52
-msgid "Widgets in this area will be shown on all posts and pages."
-msgstr "このエリアのウィジェットはすべての投稿とページに表示されます。"
-
-#: functions.php:66
+#: functions.php:48
 msgid "Enyoi Patterns"
 msgstr "Enyoi パターン"
 
-#: functions.php:67
+#: functions.php:49
 msgid "Enyoi pattern collection"
 msgstr "Enyoi パターンコレクション"
-
-#: functions.php:126
-msgid "Home"
-msgstr "ホーム"
-
-#: functions.php:147
-msgid "Privacy Policy"
-msgstr "プライバシーポリシー"
-
-#: inc/customizer.php:9
-msgid "Theme Options"
-msgstr "テーマオプション"
-
-#: inc/customizer.php:21
-msgid "Custom Logo"
-msgstr "カスタムロゴ"
-
-#: inc/customizer.php:28
-msgid "Enyoi Store Settings"
-msgstr "Enyoi 店舗設定"
-
-#: inc/customizer.php:39
-msgid "Store Location"
-msgstr "店舗所在地"
-
-#: inc/customizer.php:51
-msgid "Store Phone Number"
-msgstr "電話番号"
-
-#: inc/customizer.php:63
-msgid "Store Opening Time"
-msgstr "開店時間"
-
-#: inc/customizer.php:75
-msgid "Store Closing Time"
-msgstr "閉店時間"
-
-#: inc/customizer.php:86
-msgid "Store Holiday"
-msgstr "定休日"
-
-#: inc/customizer.php:98
-msgid "Nearest Station"
-msgstr "最寄り駅"
-
-#: inc/customizer.php:110
-msgid "YouTube Link"
-msgstr "YouTube Link"
-
-#: inc/customizer.php:122
-msgid "Instagram Link"
-msgstr "Instagram Link"
-
-#: inc/customizer.php:134
-msgid "Twitter Link"
-msgstr "X(Twitter) Link"
-
-#: inc/customizer.php:146
-msgid "Facebook Link"
-msgstr "Facebook Link"
 
 #: patterns/blog-post.php:14
 msgid "Latest Posts"
@@ -198,6 +122,22 @@ msgstr "最寄り駅"
 #: patterns/footer-main.php:94
 msgid "Meiji Jingu-mae 4-minute walk"
 msgstr "明治神宮前徒歩4分"
+
+#: patterns/footer-main.php:106
+msgid "Copyright "
+msgstr "Copyright "
+
+#: patterns/footer-main.php:106
+msgid "All rights reserved."
+msgstr "All rights reserved."
+
+#: patterns/footer-main.php:110
+msgid "Designed by "
+msgstr "Designed by "
+
+#: patterns/footer-main.php:110
+msgid "Enyoi"
+msgstr "Enyoi"
 
 #: patterns/hero-section.php:12
 msgid "Beauty<br>Redefined<br>Salon"
@@ -395,6 +335,10 @@ msgstr "その他の投稿"
 msgid "News"
 msgstr "お知らせ"
 
+#: patterns/news-section.php:22
+msgid "2025.03.01"
+msgstr "2025.03.01"
+
 #: patterns/news-section.php:26
 msgid "New Spring Menu"
 msgstr "春の新メニュー登場"
@@ -403,6 +347,10 @@ msgstr "春の新メニュー登場"
 msgid "New spring hairstyles and seasonal head spa menus have arrived."
 msgstr "春の新作ヘアスタイルと、季節限定のヘッドスパメニューが登場しました。"
 
+#: patterns/news-section.php:42
+msgid "2025.2.15"
+msgstr "2025.2.15"
+
 #: patterns/news-section.php:46
 msgid "Announcement of new stylist"
 msgstr "新スタイリスト加入のお知らせ"
@@ -410,6 +358,10 @@ msgstr "新スタイリスト加入のお知らせ"
 #: patterns/news-section.php:50
 msgid "Two new stylists have joined us."
 msgstr "新たに2名のスタイリストが加入いたしました。"
+
+#: patterns/page-404.php:18
+msgid "404"
+msgstr "404"
 
 #: patterns/page-404.php:22
 msgid "Sorry, the page you are looking for does not exist."
@@ -498,3 +450,60 @@ msgid ""
 msgstr ""
 "メンズカットとカラーリングのスペシャリスト。お客様のライフスタイルに合わせた"
 "スタイルを提案。"
+
+#~ msgid "Enyoi Header Menu"
+#~ msgstr "Enyoi ヘッダーメニュー"
+
+#~ msgid "Enyoi Footer Menu"
+#~ msgstr "Enyoi フッターメニュー"
+
+#~ msgid "Sidebar"
+#~ msgstr "サイドバー"
+
+#~ msgid "Widgets in this area will be shown on all posts and pages."
+#~ msgstr "このエリアのウィジェットはすべての投稿とページに表示されます。"
+
+#~ msgid "Home"
+#~ msgstr "ホーム"
+
+#~ msgid "Privacy Policy"
+#~ msgstr "プライバシーポリシー"
+
+#~ msgid "Theme Options"
+#~ msgstr "テーマオプション"
+
+#~ msgid "Custom Logo"
+#~ msgstr "カスタムロゴ"
+
+#~ msgid "Enyoi Store Settings"
+#~ msgstr "Enyoi 店舗設定"
+
+#~ msgid "Store Location"
+#~ msgstr "店舗所在地"
+
+#~ msgid "Store Phone Number"
+#~ msgstr "電話番号"
+
+#~ msgid "Store Opening Time"
+#~ msgstr "開店時間"
+
+#~ msgid "Store Closing Time"
+#~ msgstr "閉店時間"
+
+#~ msgid "Store Holiday"
+#~ msgstr "定休日"
+
+#~ msgid "Nearest Station"
+#~ msgstr "最寄り駅"
+
+#~ msgid "YouTube Link"
+#~ msgstr "YouTube Link"
+
+#~ msgid "Instagram Link"
+#~ msgstr "Instagram Link"
+
+#~ msgid "Twitter Link"
+#~ msgstr "X(Twitter) Link"
+
+#~ msgid "Facebook Link"
+#~ msgstr "Facebook Link"

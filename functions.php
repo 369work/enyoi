@@ -38,24 +38,6 @@ function enyoi_theme_setup() {
     add_theme_support('title-tag');
     add_theme_support('custom-logo');
 
-
-    // ナビゲーションメニューを登録
-    register_nav_menus(array(
-        'enyoi_primary' => __('Enyoi Header Menu', 'enyoi'),
-        'enyoi_footer' => __('Enyoi Footer Menu', 'enyoi')
-    ));
-
-    // sidebar ウィジェットエリアを登録
-    register_sidebar(array(
-        'name'          => __('Sidebar', 'enyoi'),
-        'id'            => 'sidebar-1',
-        'description'   => __('Widgets in this area will be shown on all posts and pages.', 'enyoi'),
-        'before_widget' => '<section id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ));
-
 }
 add_action('after_setup_theme', 'enyoi_theme_setup');
 
@@ -92,70 +74,8 @@ function enyoi_enqueue_block_editor_assets()
 add_action('enqueue_block_editor_assets', 'enyoi_enqueue_block_editor_assets');
 
 
-function get_block_pattern_content($pattern_name)
-{
-    $pattern_file = get_template_directory() . '/patterns/' . $pattern_name . '.php';
-
-    if (file_exists($pattern_file)) {
-        ob_start();
-        include $pattern_file;
-        return ob_get_clean();
-    }
-
-    return '';
-}
 
 
-// Enyoiのデフォルトメニューを作成
-function enyoi_create_default_menu()
-{
-    // Primary Menu (ヘッダー用)
-    $primary_menu_name = __('Enyoi Header Menu', 'enyoi');
-    $primary_menu_exists = wp_get_nav_menu_object($primary_menu_name);
-
-    if (!$primary_menu_exists) {
-        $primary_menu_id = wp_create_nav_menu($primary_menu_name);
-        if (!is_wp_error($primary_menu_id)) {
-            // メニューロケーションに割り当て
-            $locations = get_theme_mod('nav_menu_locations');
-            $locations['enyoi_primary'] = $primary_menu_id;
-            set_theme_mod('nav_menu_locations', $locations);
-
-            // デフォルトのメニューアイテムを追加
-            wp_update_nav_menu_item($primary_menu_id, 0, array(
-                'menu-item-title' => __('Home', 'enyoi'),
-                'menu-item-url' => home_url('/'),
-                'menu-item-status' => 'publish'
-            ));
-        }
-    }
-
-    // Footer Menu (フッター用)
-    $footer_menu_name = __('Enyoi Footer Menu', 'enyoi');
-    $footer_menu_exists = wp_get_nav_menu_object($footer_menu_name);
-
-    if (!$footer_menu_exists) {
-        $footer_menu_id = wp_create_nav_menu($footer_menu_name);
-        if (!is_wp_error($footer_menu_id)) {
-            // メニューロケーションに割り当て
-            $locations = get_theme_mod('nav_menu_locations');
-            $locations['enyoi_footer'] = $footer_menu_id;
-            set_theme_mod('nav_menu_locations', $locations);
-
-            // デフォルトのフッターメニューアイテムを追加
-            wp_update_nav_menu_item($footer_menu_id, 0, array(
-                'menu-item-title' => __('Privacy Policy', 'enyoi'),
-                'menu-item-url' => home_url('/privacy-policy'),
-                'menu-item-status' => 'publish'
-            ));
-        }
-    }
-}
-add_action('after_setup_theme', 'enyoi_create_default_menu');
-
-
-// admin setting includes
-require_once get_template_directory() . '/inc/admin-setting.php';
 
 
 

@@ -18,7 +18,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"btn-primary is-style-fill"} -->
-            <div class="wp-block-button btn-primary is-style-fill"><a href="#contact" class="wp-block-button__link wp-element-button"><?php _e('Reservation'); ?></a></div>
+            <div class="wp-block-button btn-primary is-style-fill"><a href="#contact" class="wp-block-button__link wp-element-button"><?php _e('Reservation', 'enyoi'); ?></a></div>
             <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->

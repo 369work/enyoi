@@ -19,7 +19,7 @@
             <!-- wp:group {"className":"news-item fade-in","tagName":"article","layout":{"type":"constrained"}} -->
             <article class="wp-block-group news-item fade-in">
                 <!-- wp:paragraph {"className":"news-date"} -->
-                <p class="news-date">2024.03.15</p>
+                <p class="news-date"><?php esc_html_e('2025.03.01', 'enyoi'); ?></p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:heading {"level":3,"className":"news-title"} -->
@@ -39,7 +39,7 @@
             <!-- wp:group {"className":"news-item fade-in","tagName":"article","layout":{"type":"constrained"}} -->
             <article class="wp-block-group news-item fade-in">
                 <!-- wp:paragraph {"className":"news-date"} -->
-                <p class="news-date">2024.02.15</p>
+                <p class="news-date"><?php esc_html_e('2025.2.15', 'enyoi'); ?></p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:heading {"level":3,"className":"news-title"} -->

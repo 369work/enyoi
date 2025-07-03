@@ -103,11 +103,11 @@
         <!-- wp:group {"className":"footer-bottom has-text-color has-light-gray-color","layout":{"type":"flex","flexWrap":"nowrap"}} -->
         <div class="wp-block-group footer-bottom has-text-color has-light-gray-color">
             <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-gray"}}}},"textColor":"light-gray"} -->
-            <p class="has-text-align-center has-light-gray-color has-text-color has-link-color">© 2025 <?php bloginfo('name'); ?> All rights reserved.</p>
+            <p class="has-text-align-center has-light-gray-color has-text-color has-link-color"><?php esc_html_e('Copyright ', 'enyoi'); ?><?php bloginfo('name'); ?> <?php esc_html_e('All rights reserved.', 'enyoi'); ?></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-gray"}}}},"textColor":"light-gray"} -->
-            <p class="has-text-align-center has-light-gray-color has-text-color has-link-color">Designed by <a href="https://profiles.wordpress.org/369work/" target="_blank" rel="noreferrer noopener" class="has-light-gray-color has-text-color has-link-color">Enyoi</a></p>
+            <p class="has-text-align-center has-light-gray-color has-text-color has-link-color"><?php esc_html_e('Designed by ', 'enyoi'); ?><a href="https://profiles.wordpress.org/369work/" target="_blank" rel="noreferrer noopener" class="has-light-gray-color has-text-color has-link-color"><?php esc_html_e('Enyoi', 'enyoi'); ?></a></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
