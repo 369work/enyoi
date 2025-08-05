@@ -76,25 +76,30 @@
                 <!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}}},"textColor":"secondary"} -->
                 <h3 class="wp-block-heading has-secondary-color has-text-color has-link-color"><?php esc_html_e('Store', 'enyoi'); ?></h3>
                 <!-- /wp:heading -->
-                <!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|text-sub"}}}},"textColor":"text-sub"} -->
-                <ul class="wp-block-list has-text-sub-color has-text-color has-link-color">
-                    <!-- wp:list-item -->
-                    <li>📍 <?php esc_html_e('Jingumae, Shibuya-ku, Tokyo', 'enyoi'); ?></li>
-                    <!-- /wp:list-item -->
+                <?php if (is_plugin_active('enyoi-store-info/enyoi-store-info.php')): ?>
+                    <?php enyoi_store_info('compact'); ?>
+                <?php else: ?>
+                    <!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|text-sub"}}}},"textColor":"text-sub"} -->
+                    <ul class="wp-block-list has-text-sub-color has-text-color has-link-color">
+                        <!-- wp:list-item -->
+                        <li>📍 <?php esc_html_e('Jingumae, Shibuya-ku, Tokyo', 'enyoi'); ?></li>
+                        <!-- /wp:list-item -->
 
-                    <!-- wp:list-item -->
-                    <li>☎ <?php esc_html_e('03-0000-0000', 'enyoi'); ?></li>
-                    <!-- /wp:list-item -->
+                        <!-- wp:list-item -->
+                        <li>☎ <?php esc_html_e('03-0000-0000', 'enyoi'); ?></li>
+                        <!-- /wp:list-item -->
 
-                    <!-- wp:list-item -->
-                    <li>🕙 <?php esc_html_e('10:00', 'enyoi'); ?> - <?php esc_html_e('20:00', 'enyoi'); ?>（<?php esc_html_e('Closed Day', 'enyoi'); ?>：<?php esc_html_e('Tue', 'enyoi'); ?>）</li>
-                    <!-- /wp:list-item -->
+                        <!-- wp:list-item -->
+                        <li>🕙 <?php esc_html_e('10:00', 'enyoi'); ?> - <?php esc_html_e('20:00', 'enyoi'); ?>（<?php esc_html_e('Closed Day', 'enyoi'); ?>：<?php esc_html_e('Tue', 'enyoi'); ?>）</li>
+                        <!-- /wp:list-item -->
 
-                    <!-- wp:list-item -->
-                    <li>🚃 <?php esc_html_e('Nearest station', 'enyoi'); ?>：<?php esc_html_e('Meiji Jingu-mae 4-minute walk', 'enyoi'); ?></li>
-                    <!-- /wp:list-item -->
-                </ul>
-                <!-- /wp:list -->
+                        <!-- wp:list-item -->
+                        <li>🚃 <?php esc_html_e('Nearest station', 'enyoi'); ?>：<?php esc_html_e('Meiji Jingu-mae 4-minute walk', 'enyoi'); ?></li>
+                        <!-- /wp:list-item -->
+                    </ul>
+                    <!-- /wp:list -->
+                <?php endif; ?>
+
             </div>
             <!-- /wp:group -->
         </div>

@@ -7,7 +7,7 @@ Tags: block-patterns, block-styles, one-column, custom-logo, editor-style, featu
 Requires at least: 6.6
 Tested up to: 6.8
 Requires PHP: 8.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -68,6 +68,11 @@ Yes, Enyoi is fully responsive and mobile-friendly.
 * Icon(user.webp) : Copyright 369work. licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
 
 
+== Supports ==
+
+* https://369theme.com/enyoi/
+* You can view documentation and get support on the above site.
+
 
 == Changelog ==
 
@@ -78,3 +83,6 @@ Yes, Enyoi is fully responsive and mobile-friendly.
 * Bug fixed
 * Remove functions
 * license fixed
+
+= 1.2 =
+* Added shortcode for plugin to footer
