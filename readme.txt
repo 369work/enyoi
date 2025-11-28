@@ -5,9 +5,9 @@ Contributors: miroku
 Author URI: https://profiles.wordpress.org/369work/
 Tags: block-patterns, block-styles, one-column, custom-logo, editor-style, featured-images, full-site-editing, translation-ready
 Requires at least: 6.6
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 8.1
-Stable tag: 1.3
+Stable tag: 1.4
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -89,4 +89,8 @@ Yes, Enyoi is fully responsive and mobile-friendly.
 
 = 1.3 =
 * archive.html style Added
+
+= 1.4 =
+* Compatible with WordPress 6.9
+* Search page Bug fixed
 
