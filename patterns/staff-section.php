@@ -11,7 +11,7 @@
     <!-- wp:group {"className":"container","layout":{"type":"constrained"}} -->
     <div class="wp-block-group container">
         <!-- wp:heading {"level":2,"className":"section-title fade-in"} -->
-        <h2 class="wp-block-heading section-title fade-in"><span data-subtitle="STAFF"><?php esc_html_e('Staff Introduction', 'enyoi'); ?></span></h2>
+        <h2 class="wp-block-heading section-title fade-in"><span data-subtitle="<?php esc_attr_e('STAFF', 'enyoi'); ?>"><?php esc_html_e('Staff Introduction', 'enyoi'); ?></span></h2>
         <!-- /wp:heading -->
 
         <!-- wp:group {"className":"staff-grid","layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"300px"}} -->
@@ -19,7 +19,7 @@
             <!-- wp:group {"className":"staff-card","layout":{"type":"constrained"}} -->
             <div class="wp-block-group staff-card">
                 <!-- wp:image {"className":"staff-avatar"} -->
-                <figure class="wp-block-image staff-avatar"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/user.webp" alt="Staff Image" /></figure>
+                <figure class="wp-block-image staff-avatar"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/user.webp" alt="<?php esc_attr_e('Staff Image', 'enyoi'); ?>" /></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:heading {"level":3,"className":"staff-name"} -->
@@ -39,7 +39,7 @@
             <!-- wp:group {"className":"staff-card","layout":{"type":"constrained"}} -->
             <div class="wp-block-group staff-card">
                 <!-- wp:image {"className":"staff-avatar"} -->
-                <figure class="wp-block-image staff-avatar"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/user.webp" alt="Staff Image" /></figure>
+                <figure class="wp-block-image staff-avatar"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/user.webp" alt="<?php esc_attr_e('Staff Image', 'enyoi'); ?>" /></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:heading {"level":3,"className":"staff-name"} -->

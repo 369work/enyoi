@@ -6,7 +6,7 @@
  * Categories: enyoi_patterns
  */
 ?>
-<!-- wp:group {"align":"full"},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-layout-constrained has-background">
     <!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
     <div class="wp-block-group alignwide">
@@ -22,7 +22,13 @@
         <p class="has-text-align-center has-text-light-color has-text-color has-link-color"><?php esc_html_e('Sorry, the page you are looking for does not exist.', 'enyoi'); ?></p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|text-light"}}}},"textColor":"text-light"} -->
-        <p class="has-text-align-center has-text-light-color has-text-color has-link-color"><?php printf(__('Please go back to %s or try searching for a different word.', 'enyoi'), '<a href="' . esc_url(home_url('/')) . '">' . __('TOP', 'enyoi') . '</a>'); ?></p>
+        <p class="has-text-align-center has-text-light-color has-text-color has-link-color"><?php
+            printf(
+                /* translators: %s: Home page link */
+                wp_kses( __( 'Please go back to %s or try searching for a different word.', 'enyoi' ), array() ),
+                '<a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html__( 'TOP', 'enyoi' ) . '</a>'
+            );
+        ?></p>
         <!-- /wp:paragraph -->
 
         <!-- wp:spacer {"height":"30px"} -->

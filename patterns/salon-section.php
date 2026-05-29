@@ -9,13 +9,13 @@
 <!-- wp:group {"tagName":"section","className":"section section-bg-gray","layout":{"type":"constrained"}} -->
 <section id="about" class="wp-block-group section section-bg-gray"><!-- wp:group {"className":"container","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
     <div class="wp-block-group container"><!-- wp:heading {"className":"section-title fade-in","style":{"typography":{"textAlign":"center"}}} -->
-        <h2 class="wp-block-heading section-title fade-in"><span data-subtitle="ABOUT"><?php esc_html_e('About the salon', 'enyoi'); ?></span></h2>
+        <h2 class="wp-block-heading section-title fade-in"><span data-subtitle="<?php esc_attr_e('ABOUT', 'enyoi'); ?>"><?php esc_html_e('About the salon', 'enyoi'); ?></span></h2>
         <!-- /wp:heading -->
 
         <!-- wp:group {"className":"about-content","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
         <div class="wp-block-group about-content"><!-- wp:paragraph {"className":"about-description fade-in"} -->
             <p class="about-description fade-in">
-                <?php _e('We value the individuality and beauty of each customer, and will propose hairstyles incorporating the latest trends and techniques. Please enjoy a comfortable salon time in a relaxing space.', 'enyoi'); ?>
+                <?php esc_html_e('We value the individuality and beauty of each customer, and will propose hairstyles incorporating the latest trends and techniques. Please enjoy a comfortable salon time in a relaxing space.', 'enyoi'); ?>
 
             </p>
             <!-- /wp:paragraph -->

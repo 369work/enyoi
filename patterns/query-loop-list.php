@@ -6,7 +6,7 @@
  * Categories: enyoi_patterns
  */
 ?>
-<!-- wp:query {"queryId":35,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-medium-posts","name":"左に画像"}} -->
+<!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-medium-posts","name":"左に画像"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"constrained","wideSize":"1200px"}} -->
 	<!-- wp:columns {"align":"wide","style":{"border":{"width":"1px"}},"borderColor":"text-light"} -->
 	<div class="wp-block-columns alignwide has-border-color has-text-light-border-color" style="border-width:1px"><!-- wp:column {"width":"66.66%"} -->
@@ -25,11 +25,8 @@
 
 
 	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:query-no-results -->
-		<!-- wp:paragraph -->
-		<p><?php esc_html_e('Sorry, we could not find anything. Try searching with different keywords.', 'enyoi'); ?></p>
-		<!-- /wp:paragraph -->
-		<!-- /wp:query-no-results -->
+	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+		<!-- wp:pattern {"slug":"enyoi/no-results"} /-->
 	</div>
 	<!-- /wp:group -->
 

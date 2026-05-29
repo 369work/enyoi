@@ -6,12 +6,12 @@
  * Categories: enyoi_patterns
  */
 ?>
-<!-- wp:group {"tagName":"section","className":"section section-bg-white","tagName":"section","metadata":{"name":"Blog Post Section"}} -->
+<!-- wp:group {"tagName":"section","className":"section section-bg-white","metadata":{"name":"Blog Post Section"}} -->
 <section class="wp-block-group section section-bg-white" id="blog">
     <!-- wp:group {"className":"container"} -->
     <div class="wp-block-group container">
         <!-- wp:heading {"level":2,"className":"section-title fade-in"} -->
-        <h2 class="wp-block-heading section-title fade-in"><span data-subtitle="BLOG"><?php esc_html_e('Latest Posts', 'enyoi'); ?></span></h2>
+        <h2 class="wp-block-heading section-title fade-in"><span data-subtitle="<?php esc_attr_e('BLOG', 'enyoi'); ?>"><?php esc_html_e('Latest Posts', 'enyoi'); ?></span></h2>
         <!-- /wp:heading -->
         <!-- wp:group {"className":"alignfull"} -->
         <div class="wp-block-group">
@@ -28,24 +28,18 @@
 
                     <!-- wp:post-title {"isLink":true} /-->
 
-                    <!-- wp:group {"className":"news-description","tagName":"p"} -->
-                    <p class="wp-block-group news-description">
+                    <!-- wp:group {"className":"news-description"} -->
+                    <div class="wp-block-group news-description">
                         <!-- wp:post-excerpt /-->
-                    </p>
+                    </div>
                     <!-- /wp:group -->
 
-                    <!-- wp:paragraph {"className":"news-link-wrapper"} -->
-                    <p class="news-link-wrapper"><a href="#" class="news-link"><?php esc_html_e('Read more', 'enyoi'); ?></a></p>
-                    <!-- /wp:paragraph -->
+                    <!-- wp:read-more {"className":"news-link"} /-->
                 </article>
                 <!-- /wp:group -->
                 <!-- /wp:post-template -->
 
-                <!-- wp:query-no-results -->
-                <!-- wp:paragraph -->
-                <p><?php esc_html_e('Sorry, we could not find anything. Try searching with different keywords.', 'enyoi'); ?></p>
-                <!-- /wp:paragraph -->
-                <!-- /wp:query-no-results -->
+                <!-- wp:pattern {"slug":"enyoi/no-results"} /-->
             </div>
             <!-- /wp:query -->
         </div>

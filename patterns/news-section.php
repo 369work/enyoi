@@ -11,7 +11,7 @@
     <!-- wp:group {"className":"container","layout":{"type":"constrained"}} -->
     <div class="wp-block-group container">
         <!-- wp:heading {"level":2,"className":"section-title fade-in"} -->
-        <h2 class="wp-block-heading section-title fade-in"><span data-subtitle="NEWS"><?php esc_html_e('News', 'enyoi'); ?></span></h2>
+        <h2 class="wp-block-heading section-title fade-in"><span data-subtitle="<?php esc_attr_e('NEWS', 'enyoi'); ?>"><?php esc_html_e('News', 'enyoi'); ?></span></h2>
         <!-- /wp:heading -->
 
         <!-- wp:group {"className":"news-grid","layout":{"type":"constrained"}} -->

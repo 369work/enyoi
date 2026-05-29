@@ -3,9 +3,9 @@ Theme Name: Enyoi
 Author: Miroku
 Author URI: https://profiles.wordpress.org/369work/
 Description: Enyoi is a modern, minimalistic WordPress theme designed for full site editing. It features a clean layout, responsive design, and is optimized for performance. Perfect for beauty salons, and small business websites.
-Version: 1.4
+Version: 1.6
 Requires at least: 6.6
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 8.1
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -24,10 +24,7 @@ Domain Path: /languages
 }
 
 body {
-    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    margin: 0;
-    padding: 0;
 }
 
 img, picture, video, canvas, svg {
@@ -87,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .wp-block-post-comments-form h3.comment-reply-title {
     font-size: 1.5rem;
-    color: #005A9C;
+    color: var(--wp--preset--color--primary);
 }
 
 
@@ -103,7 +100,7 @@ h3.wp-block-heading:not(.category-title) {
 }
 
 .wp-block-navigation__responsive-container-open.wp-block-navigation__responsive-container-open.wp-block-navigation__responsive-container-open:hover {
-    color: #00CFFF;
+    color: var(--wp--preset--color--primary);
 }
 
 .wp-block-navigation__responsive-container-close svg, .wp-block-navigation__responsive-container-open svg {
@@ -135,9 +132,8 @@ h3.wp-block-heading:not(.category-title) {
 }
 
 .wp-block-button:hover {
-    /* 見出しブロックのスタイル名と類似 */
-    background-color: #0ea5e9;
-    color: #fff;
+    background-color: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--white);
     opacity: 0.8;
     transform: scale(1.02);
     transition: all 0.3s ease;
@@ -146,8 +142,7 @@ h3.wp-block-heading:not(.category-title) {
 
 h2.wp-block-post-title {
     text-align: left;
-    color: #8b5cf6;
-
+    color: var(--wp--preset--color--tertiary);
 }
 
 .wp-block-post-terms {
@@ -166,6 +161,10 @@ button {
 }
 
 /* Enyoi Style */
+:root {
+    --wp--custom--header-height: 130px;
+}
+
 html,
 body {
     width: 100%;
@@ -175,7 +174,6 @@ body {
     padding: 0;
     overflow-x: hidden;
     position: relative;
-    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
     line-height: 1.6;
 }
 
@@ -191,6 +189,7 @@ header {
     z-index: 100;
     position: relative;
     padding: 0;
+    background-color: #fff;
 }
 
 .is-layout-flex.header-logo {
@@ -721,7 +720,7 @@ main {
 .section-title {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 5rem !important;
+    margin-bottom: 5rem;
     letter-spacing: 2px;
     position: relative;
     padding-bottom: 20px;
@@ -729,7 +728,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    color: #2c3e50;
+    color: var(--wp--preset--color--primary-dark);
 }
 
 .section-title span {
@@ -744,7 +743,7 @@ main {
     font-size: 0.4em;
     font-weight: 400;
     letter-spacing: 3px;
-    color: #e67e22;
+    color: var(--wp--preset--color--secondary);
     opacity: 0.8;
 }
 
@@ -757,9 +756,9 @@ main {
     width: 60px;
     height: 2px;
     background: linear-gradient(90deg,
-            rgba(230, 126, 34, 0) 0%,
-            rgba(230, 126, 34, 0.8) 50%,
-            rgba(230, 126, 34, 0) 100%);
+            rgba(192, 144, 112, 0) 0%,
+            rgba(192, 144, 112, 0.8) 50%,
+            rgba(192, 144, 112, 0) 100%);
 }
 
 
@@ -768,7 +767,7 @@ main {
 
     .section-title {
         font-size: 2.5rem;
-        margin-bottom: 6rem !important;
+        margin-bottom: 6rem;
         gap: 12px;
     }
 
@@ -782,11 +781,11 @@ main {
 }
 
 .section-bg-white {
-    background-color: white;
+    background-color: var(--wp--preset--color--white);
 }
 
 .section-bg-gray {
-    background-color: #fafafa;
+    background-color: var(--wp--preset--color--back-light);
 }
 
 .form {
@@ -810,7 +809,7 @@ main {
     border-radius: 2px;
     border: none;
     font-size: 1rem;
-    color: #2c3e50;
+    color: var(--wp--preset--color--primary-dark);
     background-color: rgba(255, 255, 255, 0.9);
     transition: all 0.3s ease;
     box-sizing: border-box;
@@ -819,9 +818,10 @@ main {
 .form-input:focus,
 .form-select:focus,
 .form-textarea:focus {
-    outline: none;
+    outline: 2px solid var(--wp--preset--color--primary);
+    outline-offset: 2px;
     background-color: white;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.15);
 }
 
 .form-textarea {
@@ -831,8 +831,8 @@ main {
 
 .form-button {
     width: 100%;
-    background-color: #0077C8;
-    color: #fff;
+    background-color: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--white);
     padding: 1rem 0;
     border-radius: 2px;
     border: none;
@@ -857,30 +857,29 @@ main {
     box-sizing: border-box;
 }
 
-h2 {
+.section h2 {
     font-size: clamp(1.4rem, 2.5vw, 2rem);
     margin-bottom: 1.25rem;
-    color: #2c3e50;
+    color: var(--wp--preset--color--primary-dark);
     text-align: center;
-    font-weight: 300;
     letter-spacing: 2px;
     font-weight: 700;
 }
 
-h3 {
+.section h3 {
     font-size: clamp(1.1rem, 2vw, 1.3rem);
     margin-bottom: 1.25rem;
-    color: #2c3e50;
+    color: var(--wp--preset--color--primary-dark);
     font-weight: 700;
 }
 
 @media (min-width: 768px) {
-    h2 {
+    .section h2 {
         font-size: clamp(1.8rem, 3.5vw, 2.8rem);
         margin-bottom: 35px;
     }
 
-    h3 {
+    .section h3 {
         font-size: clamp(1.4rem, 2.8vw, 1.8rem);
     }
 }
@@ -926,14 +925,14 @@ h3 {
 nav a:hover,
 .footer-logo a:hover,
 .footer-logo a.wp-block-pages-list__item__link .wp-block-navigation-item__content {
-    color: #00CFFF;
+    color: var(--wp--preset--color--primary);
     text-decoration: underline;
 }
 
 .single-page {
     width: 100%;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 2rem .5rem;
 }
 

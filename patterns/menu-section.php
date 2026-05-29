@@ -10,7 +10,7 @@
 <section id="menu" class="wp-block-group section section-bg-white"><!-- wp:group {"className":"container","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
     <div class="wp-block-group container"><!-- wp:heading {"textAlign":"center","className":"section-title fade-in"} -->
         <h2 class="wp-block-heading has-text-align-center section-title fade-in">
-            <span data-subtitle="MENU"><?php esc_html_e('Menu', 'enyoi'); ?></span>
+            <span data-subtitle="<?php esc_attr_e('MENU', 'enyoi'); ?>"><?php esc_html_e('Menu', 'enyoi'); ?></span>
         </h2>
         <!-- /wp:heading -->
 

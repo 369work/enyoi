@@ -6,10 +6,10 @@
  * Categories: enyoi_patterns
  */
 ?>
-<!-- wp:group {"tagName":"section","metadata":{"name":"Contact Section"},"className":"section contact has-gray-light-gradient-background","backgroundColor":"gray-light-gradient","layout":{"type":"constrained","contentSize":"100%"}} -->
-<section id="contact" class="wp-block-group section contact has-gray-light-gradient-background has-gray-light-gradient-background-color has-background"><!-- wp:group {"className":"container","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Contact Section"},"className":"section contact","gradient":"gray-gradient","layout":{"type":"constrained","contentSize":"100%"}} -->
+<section id="contact" class="wp-block-group section contact has-gray-gradient-gradient-background has-background"><!-- wp:group {"className":"container","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
     <div class="wp-block-group container"><!-- wp:heading {"className":"section-title fade-in"} -->
-        <h2 class="wp-block-heading section-title fade-in"><span data-subtitle="RESERVE"><?php esc_html_e('About Reservations', 'enyoi'); ?></span></h2>
+        <h2 class="wp-block-heading section-title fade-in"><span data-subtitle="<?php esc_attr_e('RESERVE', 'enyoi'); ?>"><?php esc_html_e('About Reservations', 'enyoi'); ?></span></h2>
         <!-- /wp:heading -->
 
         <!-- wp:group {"className":"contact-methods","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"2rem"}},"layout":{"type":"flex","justifyContent":"center","flexWrap":"nowrap"}} -->
@@ -33,7 +33,14 @@
                 <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph -->
-                <p><?php esc_html_e('Business hours', 'enyoi'); ?>：<?php esc_html_e('10:00', 'enyoi'); ?> - <?php esc_html_e('20:00', 'enyoi'); ?></p>
+                <p><?php
+                    printf(
+                        /* translators: 1: opening time, 2: closing time */
+                        esc_html__( 'Business hours: %1$s - %2$s', 'enyoi' ),
+                        esc_html__( '10:00', 'enyoi' ),
+                        esc_html__( '20:00', 'enyoi' )
+                    );
+                ?></p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->

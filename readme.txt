@@ -5,9 +5,9 @@ Contributors: miroku
 Author URI: https://profiles.wordpress.org/369work/
 Tags: block-patterns, block-styles, one-column, custom-logo, editor-style, featured-images, full-site-editing, translation-ready
 Requires at least: 6.6
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.4
+Stable tag: 1.6
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -49,7 +49,7 @@ Key Features:
 3. Enter "Enyoi" in the search form
 4. Install
 5. Click Activate
-6. Go to the Easychic menu in your admin panel
+6. Navigate to Appearance > Editor to start customizing
 
 == Frequently Asked Questions ==
 
@@ -60,7 +60,7 @@ Yes, the theme supports WordPress custom menus.
 Yes, Enyoi is fully responsive and mobile-friendly.
 
 
-== Bundles ==
+== Resources ==
 
 * All images used in this theme are created by 369work and licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
 * Screenshot : Copyright 369work. licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
@@ -70,27 +70,48 @@ Yes, Enyoi is fully responsive and mobile-friendly.
 
 == Supports ==
 
-* https://369theme.com/enyoi/
+* https://369theme.com/theme-enyoi.html
 * You can view documentation and get support on the above site.
 
 
 == Changelog ==
 
-= 1.0.0 =
-* Initial release
+= 1.6 =
+* Compatible with WordPress 7.0
+* Design changed
+* Screenshot changed
+
+
+= 1.5 =
+* Security: Fixed escaping in pattern files
+* theme.json: Added text-light and primary-light colors, fixed
+* functions.php: Replaced @ob_end_flush() with ob_get_level() check, fixed
+* style.css: Removed font-family declarations　consolidated duplicate body styles
+* blog-post.php: Removed duplicate tagName attribute
+* Templates added
+
+= 1.4 =
+* Compatible with WordPress 6.9
+* Search page Bug fixed
+
+= 1.3 =
+* archive.html style Added
+
+= 1.2 =
+* Added shortcode for plugin to footer
 
 = 1.1 =
 * Bug fixed
 * Remove functions
 * license fixed
 
-= 1.2 =
-* Added shortcode for plugin to footer
+= 1.0.0 =
+* Initial release
 
-= 1.3 =
-* archive.html style Added
 
-= 1.4 =
-* Compatible with WordPress 6.9
-* Search page Bug fixed
+
+
+
+
+
 

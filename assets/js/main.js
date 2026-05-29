@@ -1,25 +1,44 @@
-const observeHeaderBlockSize = new ResizeObserver(entries => {
+const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+).matches;
+
+const observeHeaderBlockSize = new ResizeObserver((entries) => {
     const header = entries[0];
 
     if (header.contentBoxSize) {
         const { blockSize } = header.contentBoxSize[0];
         const roundedBlockSize = Math.round(blockSize);
-        document.documentElement.style.setProperty('--header-block-size', `${roundedBlockSize}px`);
+        document.documentElement.style.setProperty(
+            "--header-block-size",
+            `${roundedBlockSize}px`,
+        );
     }
 });
 
 // フェードインアニメーション
 function observeElements() {
-    const elements = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
+    const elements = document.querySelectorAll(".fade-in");
 
-    elements.forEach(element => {
+    if (prefersReducedMotion) {
+        // アニメーション無効設定の場合は即座に表示
+        elements.forEach((element) => {
+            element.classList.add("visible");
+        });
+        return;
+    }
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.1 },
+    );
+
+    elements.forEach((element) => {
         observer.observe(element);
     });
 }
@@ -27,27 +46,29 @@ function observeElements() {
 // スムーススクロール
 function smoothScroll() {
     const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
+    links.forEach((link) => {
+        const href = link.getAttribute("href");
+        if (!href || href === "#") {
+            return;
+        }
+        link.addEventListener("click", (e) => {
             e.preventDefault();
-            const target = document.querySelector(link.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+                    behavior: prefersReducedMotion ? "auto" : "smooth",
+                    block: "start",
                 });
             }
         });
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('header');
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector("header");
     if (header) {
         observeHeaderBlockSize.observe(header);
     }
-    // Add any additional JavaScript functionality here
     observeElements();
     smoothScroll();
 });
-

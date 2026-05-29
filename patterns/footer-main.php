@@ -76,7 +76,7 @@
                 <!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}}},"textColor":"secondary"} -->
                 <h3 class="wp-block-heading has-secondary-color has-text-color has-link-color"><?php esc_html_e('Store', 'enyoi'); ?></h3>
                 <!-- /wp:heading -->
-                <?php if (is_plugin_active('enyoi-store-info/enyoi-store-info.php')): ?>
+                <?php if (function_exists('enyoi_store_info')): ?>
                     <?php enyoi_store_info('compact'); ?>
                 <?php else: ?>
                     <!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|text-sub"}}}},"textColor":"text-sub"} -->
@@ -90,11 +90,25 @@
                         <!-- /wp:list-item -->
 
                         <!-- wp:list-item -->
-                        <li>🕙 <?php esc_html_e('10:00', 'enyoi'); ?> - <?php esc_html_e('20:00', 'enyoi'); ?>（<?php esc_html_e('Closed Day', 'enyoi'); ?>：<?php esc_html_e('Tue', 'enyoi'); ?>）</li>
+                        <li>🕙 <?php
+                            printf(
+                                /* translators: 1: opening time, 2: closing time, 3: closed day */
+                                esc_html__( '%1$s - %2$s (Closed: %3$s)', 'enyoi' ),
+                                esc_html__( '10:00', 'enyoi' ),
+                                esc_html__( '20:00', 'enyoi' ),
+                                esc_html__( 'Tue', 'enyoi' )
+                            );
+                        ?></li>
                         <!-- /wp:list-item -->
 
                         <!-- wp:list-item -->
-                        <li>🚃 <?php esc_html_e('Nearest station', 'enyoi'); ?>：<?php esc_html_e('Meiji Jingu-mae 4-minute walk', 'enyoi'); ?></li>
+                        <li>🚃 <?php
+                            printf(
+                                /* translators: %s: station name and distance */
+                                esc_html__( 'Nearest station: %s', 'enyoi' ),
+                                esc_html__( 'Meiji Jingu-mae 4-minute walk', 'enyoi' )
+                            );
+                        ?></li>
                         <!-- /wp:list-item -->
                     </ul>
                     <!-- /wp:list -->
@@ -108,7 +122,7 @@
         <!-- wp:group {"className":"footer-bottom has-text-color has-light-gray-color","layout":{"type":"flex","flexWrap":"nowrap"}} -->
         <div class="wp-block-group footer-bottom has-text-color has-light-gray-color">
             <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-gray"}}}},"textColor":"light-gray"} -->
-            <p class="has-text-align-center has-light-gray-color has-text-color has-link-color"><?php esc_html_e('Copyright ', 'enyoi'); ?><?php bloginfo('name'); ?> <?php esc_html_e('All rights reserved.', 'enyoi'); ?></p>
+            <p class="has-text-align-center has-light-gray-color has-text-color has-link-color"><?php esc_html_e('Copyright ', 'enyoi'); ?><?php echo esc_html(get_bloginfo('name')); ?> <?php esc_html_e('All rights reserved.', 'enyoi'); ?></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-gray"}}}},"textColor":"light-gray"} -->

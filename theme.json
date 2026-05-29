@@ -16,8 +16,7 @@
             "defaultDuotone": false,
             "defaultGradients": false,
             "defaultPalette": false,
-            "duotone": [
-            ],
+            "duotone": [],
             "gradients": [
                 {
                     "gradient": "linear-gradient(135deg, #e5e7eb 0%, #9ca3af  100%)",
@@ -32,69 +31,79 @@
             ],
             "palette": [
                 {
-                    "name": "Primary",
+                    "name": "プライマリ",
                     "slug": "primary",
-                    "color": "#0ea5e9"
+                    "color": "#c4897c"
                 },
                 {
-                    "name": "Secondary",
+                    "name": "セカンダリ",
                     "slug": "secondary",
-                    "color": "#f97316"
+                    "color": "#c09070"
                 },
                 {
-                    "name": "Tertiary",
+                    "name": "ターシャリ",
                     "slug": "tertiary",
-                    "color": "#8b5cf6"
+                    "color": "#9b7c8a"
                 },
                 {
-                    "name": "Accent",
+                    "name": "アクセント",
                     "slug": "accent",
                     "color": "#10b981"
                 },
                 {
-                    "name": "Primary Dark",
+                    "name": "プライマリダーク",
                     "slug": "primary-dark",
-                    "color": "#082f49"
+                    "color": "#2d2d35"
                 },
                 {
-                    "name": "Light Gray",
+                    "name": "ライトグレー",
                     "slug": "light-gray",
-                    "color": "#f1f5f9"
+                    "color": "#f5f0ed"
                 },
                 {
-                    "name": "Text Main",
+                    "name": "テキストメイン",
                     "slug": "text-main",
-                    "color": "#0f172a"
+                    "color": "#2d2d35"
                 },
                 {
-                    "name": "Text Sub",
+                    "name": "テキストサブ",
                     "slug": "text-sub",
                     "color": "#cbd5e1"
                 },
                 {
-                    "name": "Back Light",
+                    "name": "バックライト",
                     "slug": "back-light",
-                    "color": "#f0f9ff"
+                    "color": "#ebebef"
                 },
                 {
-                    "name": "White",
+                    "name": "ホワイト",
                     "slug": "white",
                     "color": "#FFFFFF"
                 },
                 {
-                    "name": "Black",
+                    "name": "ブラック",
                     "slug": "black",
                     "color": "#000000"
                 },
                 {
-                    "name": "Yellow",
+                    "name": "イエロー",
                     "slug": "yellow",
                     "color": "#eab308"
                 },
                 {
-                    "name": "Red",
+                    "name": "レッド",
                     "slug": "red",
                     "color": "#ef4444"
+                },
+                {
+                    "name": "テキストライト",
+                    "slug": "text-light",
+                    "color": "#94a3b8"
+                },
+                {
+                    "name": "プライマリライト",
+                    "slug": "primary-light",
+                    "color": "#bae6fd"
                 }
             ]
         },
@@ -260,11 +269,11 @@
                 "elements": {
                     "link": {
                         "color": {
-                            "text": "var(--wp--preset--color--primary)"
+                            "text": "var(--wp--preset--color--text-main)"
                         },
                         ":hover": {
                             "color": {
-                                "text": "var(--wp--preset--color--tertiary)"
+                                "text": "var(--wp--preset--color--primary)"
                             }
                         }
                     }
@@ -291,11 +300,11 @@
                 "elements": {
                     "link": {
                         "color": {
-                            "text": "var(--wp--preset--color--text-tertiary)"
+                            "text": "var(--wp--preset--color--primary-dark)"
                         },
                         ":hover": {
                             "color": {
-                                "text": "var(--wp--preset--color--primary)"
+                                "text": "var(--wp--preset--color--secondary)"
                             }
                         }
                     }
@@ -317,7 +326,7 @@
         },
         "color": {
             "text": "var(--wp--preset--color--text-main)",
-            "background": "var(--wp--preset--color--backlight)"
+            "background": "var(--wp--preset--color--white)"
         },
         "elements": {
             "button": {
@@ -386,11 +395,11 @@
             },
             "link": {
                 "color": {
-                    "text": "var(--wp--preset--color--primary)"
+                    "text": "var(--wp--preset--color--primary-dark)"
                 },
                 ":hover": {
                     "color": {
-                        "text": "var(--wp--preset--color--tertiary)"
+                        "text": "var(--wp--preset--color--secondary)"
                     }
                 }
             }
@@ -411,7 +420,7 @@
             }
         },
         "typography": {
-            "fontFamily": "var(--wp--preset--font--family--japanese)",
+            "fontFamily": "var(--wp--preset--font-family--japanese)",
             "fontSize": "var(--wp--preset--font-size--medium)",
             "lineHeight": "1.6"
         }
@@ -426,11 +435,6 @@
             "name": "footer",
             "title": "フッター",
             "area": "footer"
-        },
-        {
-            "name": "sidebar",
-            "title": "サイドバー",
-            "area": "sidebar"
         }
     ]
 }

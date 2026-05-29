@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: enyoi1.0\n"
-"POT-Creation-Date: 2025-07-02 14:19+0900\n"
-"PO-Revision-Date: 2025-07-02 14:20+0900\n"
+"Project-Id-Version: enyoi1.5\n"
+"POT-Creation-Date: 2026-02-25 20:07+0900\n"
+"PO-Revision-Date: 2026-02-25 20:09+0900\n"
 "Last-Translator: 369work\n"
 "Language-Team: 369work\n"
 "Language: ja\n"
@@ -11,37 +11,46 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: _e;_n;_x;__;esc_html_e;esc_html_x\n"
+"X-Poedit-KeywordsList: _e;_n;_x;__;esc_html_e;esc_html_x;esc_html_attr;"
+"esc_attr_e\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
 
-#: functions.php:48
+#: functions.php:35
 msgid "Enyoi Patterns"
 msgstr "Enyoi パターン"
 
-#: functions.php:49
+#: functions.php:36
 msgid "Enyoi pattern collection"
 msgstr "Enyoi パターンコレクション"
+
+#: patterns/archive-header.php:17
+msgid "Archive"
+msgstr "アーカイブ"
+
+#: patterns/author-header.php:17
+msgid "Author"
+msgstr "投稿者"
+
+#: patterns/blog-post.php:14 patterns/home-header.php:17
+msgid "BLOG"
+msgstr "BLOG"
 
 #: patterns/blog-post.php:14
 msgid "Latest Posts"
 msgstr "最新の投稿"
 
-#: patterns/blog-post.php:38 patterns/news-section.php:34
-#: patterns/news-section.php:54
-msgid "Read more"
-msgstr "もっと見る"
-
-#: patterns/blog-post.php:46 patterns/query-loop-list.php:30
-#: patterns/query-loop.php:30
-msgid ""
-"Sorry, we could not find anything. Try searching with different keywords."
-msgstr ""
-"申し訳ございませんが、何も見つかりませんでした。別のキーワードで検索してみて"
-"ください。"
+#: patterns/category-header.php:17
+msgid "Category"
+msgstr "カテゴリー"
 
 #: patterns/comments.php:12
 msgid "Comments"
 msgstr "コメント"
+
+#: patterns/contact-section.php:12
+msgid "RESERVE"
+msgstr "RESERVE"
 
 #: patterns/contact-section.php:12
 msgid "About Reservations"
@@ -55,31 +64,19 @@ msgstr "お電話"
 msgid "Reservations and inquiries can also be made by phone."
 msgstr "ご予約やお問い合わせはお電話でも承っております。"
 
-#: patterns/contact-section.php:32 patterns/footer-main.php:86
+#: patterns/contact-section.php:32 patterns/footer-main.php:89
 msgid "03-0000-0000"
 msgstr "03-0000-0000"
 
-#: patterns/contact-section.php:36
-msgid "Business hours"
-msgstr "営業時間"
-
-#: patterns/contact-section.php:36 patterns/footer-main.php:90
-msgid "10:00"
-msgstr "10:00"
-
-#: patterns/contact-section.php:36 patterns/footer-main.php:90
-msgid "20:00"
-msgstr "20:00"
-
-#: patterns/contact-section.php:47
+#: patterns/contact-section.php:54
 msgid "Email"
 msgstr "メール"
 
-#: patterns/contact-section.php:51
+#: patterns/contact-section.php:58
 msgid "Please send us a message using the contact form."
 msgstr "お問い合わせフォームからメッセージをお送りください。"
 
-#: patterns/contact-section.php:55
+#: patterns/contact-section.php:62
 msgid "Contact form"
 msgstr "お問い合わせフォーム"
 
@@ -103,81 +100,73 @@ msgstr "インフォメーション"
 msgid "Store"
 msgstr "店舗情報"
 
-#: patterns/footer-main.php:82
+#: patterns/footer-main.php:85
 msgid "Jingumae, Shibuya-ku, Tokyo"
 msgstr "東京都渋谷区神宮前"
 
-#: patterns/footer-main.php:90
-msgid "Closed Day"
-msgstr "定休日"
-
-#: patterns/footer-main.php:90
-msgid "Tue"
-msgstr "火曜日"
-
-#: patterns/footer-main.php:94
-msgid "Nearest station"
-msgstr "最寄り駅"
-
-#: patterns/footer-main.php:94
-msgid "Meiji Jingu-mae 4-minute walk"
-msgstr "明治神宮前徒歩4分"
-
-#: patterns/footer-main.php:106
+#: patterns/footer-main.php:125
 msgid "Copyright "
 msgstr "Copyright "
 
-#: patterns/footer-main.php:106
+#: patterns/footer-main.php:125
 msgid "All rights reserved."
 msgstr "All rights reserved."
 
-#: patterns/footer-main.php:110
+#: patterns/footer-main.php:129
 msgid "Designed by "
 msgstr "Designed by "
 
-#: patterns/footer-main.php:110
+#: patterns/footer-main.php:129
 msgid "Enyoi"
 msgstr "Enyoi"
 
-#: patterns/hero-section.php:12
+#: patterns/hero-section.php:18
 msgid "Beauty<br>Redefined<br>Salon"
 msgstr "美しさを<br>追求する<br>サロン"
 
-#: patterns/hero-section.php:16
+#: patterns/hero-section.php:24
 msgid "We bring out your beauty with the best technology and space."
 msgstr "最高の技術と空間で、あなたの美しさを引き出します。"
 
-#: patterns/hero-section.php:21
+#: patterns/hero-section.php:30
 msgid "Reservation"
 msgstr "予約する"
 
-#: patterns/hero-section.php:30
+#: patterns/hero-section.php:38
 msgid "Popular Menu"
 msgstr "人気メニュー"
 
-#: patterns/hero-section.php:35
+#: patterns/hero-section.php:44
 msgid "Cut"
 msgstr "カット"
 
-#: patterns/hero-section.php:35
+#: patterns/hero-section.php:44
 msgid "￥5,000"
 msgstr "￥5,000"
 
-#: patterns/hero-section.php:39
+#: patterns/hero-section.php:48
 msgid "Color"
 msgstr "カラー"
 
-#: patterns/hero-section.php:39
+#: patterns/hero-section.php:48
 msgid "￥8,000"
 msgstr "￥8,000"
 
-#: patterns/hero-section.php:43
+#: patterns/hero-section.php:52
 msgid "Perm"
 msgstr "パーマ"
 
-#: patterns/hero-section.php:43
+#: patterns/hero-section.php:52
 msgid "￥10,000"
 msgstr "￥10,000"
+
+#: patterns/home-header.php:17
+msgid "Blog"
+msgstr "ブログ"
+
+#: patterns/menu-section.php:13
+msgid "MENU"
+msgstr "MENU"
 
 #: patterns/menu-section.php:19
 msgid "Cut and Styling"
@@ -332,6 +321,10 @@ msgid "More Posts"
 msgstr "その他の投稿"
 
 #: patterns/news-section.php:14
+msgid "NEWS"
+msgstr "NEWS"
+
+#: patterns/news-section.php:14
 msgid "News"
 msgstr "お知らせ"
 
@@ -347,6 +340,10 @@ msgstr "春の新メニュー登場"
 msgid "New spring hairstyles and seasonal head spa menus have arrived."
 msgstr "春の新作ヘアスタイルと、季節限定のヘッドスパメニューが登場しました。"
 
+#: patterns/news-section.php:34 patterns/news-section.php:54
+msgid "Read more"
+msgstr "もっと見る"
+
 #: patterns/news-section.php:42
 msgid "2025.2.15"
 msgstr "2025.2.15"
@@ -359,6 +356,13 @@ msgstr "新スタイリスト加入のお知らせ"
 msgid "Two new stylists have joined us."
 msgstr "新たに2名のスタイリストが加入いたしました。"
 
+#: patterns/no-results.php:12
+msgid ""
+"Sorry, we could not find anything. Try searching with different keywords."
+msgstr ""
+"申し訳ございませんが、何も見つかりませんでした。別のキーワードで検索してみて"
+"ください。"
+
 #: patterns/page-404.php:18
 msgid "404"
 msgstr "404"
@@ -367,14 +371,14 @@ msgstr "404"
 msgid "Sorry, the page you are looking for does not exist."
 msgstr "申し訳ありませんが、お探しのページは存在しません。"
 
-#: patterns/page-404.php:25
+#: patterns/page-404.php:28
 #, php-format
 msgid "Please go back to %s or try searching for a different word."
 msgstr "%sに戻るか、他のワードを検索してみてください。"
 
-#: patterns/page-404.php:25
-msgid "TOP"
-msgstr "トップ"
+#: patterns/salon-section.php:12
+msgid "ABOUT"
+msgstr "ABOUT"
 
 #: patterns/salon-section.php:12
 msgid "About the salon"
@@ -415,9 +419,25 @@ msgid ""
 "We listen to your requests in detail and suggest the best style for you."
 msgstr "お客様のご要望を詳しくお聞きし、最適なスタイルを提案"
 
+#: patterns/search-header.php:15
+msgid "Search"
+msgstr "検索"
+
+#: patterns/search-header.php:15
+msgid "Search Results"
+msgstr "検索結果"
+
+#: patterns/staff-section.php:14
+msgid "STAFF"
+msgstr "STAFF"
+
 #: patterns/staff-section.php:14
 msgid "Staff Introduction"
 msgstr "スタッフ紹介"
+
+#: patterns/staff-section.php:22 patterns/staff-section.php:42
+msgid "Staff Image"
+msgstr "スタッフ画像"
 
 #: patterns/staff-section.php:26
 msgid "Miho Tanaka"
@@ -450,6 +470,34 @@ msgid ""
 msgstr ""
 "メンズカットとカラーリングのスペシャリスト。お客様のライフスタイルに合わせた"
 "スタイルを提案。"
+
+#: patterns/tag-header.php:17
+msgid "Tag"
+msgstr "タグ"
+
+#~ msgid "Business hours"
+#~ msgstr "営業時間"
+
+#~ msgid "10:00"
+#~ msgstr "10:00"
+
+#~ msgid "20:00"
+#~ msgstr "20:00"
+
+#~ msgid "Closed Day"
+#~ msgstr "定休日"
+
+#~ msgid "Tue"
+#~ msgstr "火曜日"
+
+#~ msgid "Nearest station"
+#~ msgstr "最寄り駅"
+
+#~ msgid "Meiji Jingu-mae 4-minute walk"
+#~ msgstr "明治神宮前徒歩4分"
+
+#~ msgid "TOP"
+#~ msgstr "トップ"
 
 #~ msgid "Enyoi Header Menu"
 #~ msgstr "Enyoi ヘッダーメニュー"

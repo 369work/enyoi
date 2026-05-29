@@ -25,11 +25,8 @@
 	<!-- /wp:post-template -->
 
 	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:query-no-results -->
-		<!-- wp:paragraph -->
-		<p><?php esc_html_e('Sorry, we could not find anything. Try searching with different keywords.', 'enyoi'); ?></p>
-		<!-- /wp:paragraph -->
-		<!-- /wp:query-no-results -->
+	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+		<!-- wp:pattern {"slug":"enyoi/no-results"} /-->
 	</div>
 	<!-- /wp:group -->
 
