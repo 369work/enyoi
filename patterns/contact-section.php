@@ -1,75 +1,79 @@
 <?php
-
 /**
  * Title: Contact Section
  * Slug: enyoi/contact-section
  * Categories: enyoi_patterns
+ *
+ * @package enyoi
  */
+
 ?>
 <!-- wp:group {"tagName":"section","metadata":{"name":"Contact Section"},"className":"section contact","gradient":"gray-gradient","layout":{"type":"constrained","contentSize":"100%"}} -->
 <section id="contact" class="wp-block-group section contact has-gray-gradient-gradient-background has-background"><!-- wp:group {"className":"container","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-    <div class="wp-block-group container"><!-- wp:heading {"className":"section-title fade-in"} -->
-        <h2 class="wp-block-heading section-title fade-in"><span data-subtitle="<?php esc_attr_e('RESERVE', 'enyoi'); ?>"><?php esc_html_e('About Reservations', 'enyoi'); ?></span></h2>
-        <!-- /wp:heading -->
+	<div class="wp-block-group container"><!-- wp:heading {"className":"section-title fade-in"} -->
+		<h2 class="wp-block-heading section-title fade-in"><span data-subtitle="<?php esc_attr_e( 'RESERVE', 'enyoi' ); ?>"><?php esc_html_e( 'About Reservations', 'enyoi' ); ?></span></h2>
+		<!-- /wp:heading -->
 
-        <!-- wp:group {"className":"contact-methods","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"2rem"}},"layout":{"type":"flex","justifyContent":"center","flexWrap":"nowrap"}} -->
-        <div class="wp-block-group contact-methods">
-            <!-- wp:group {"className":"contact-card","layout":{"type":"constrained"}} -->
-            <div class="wp-block-group contact-card">
-                <!-- wp:paragraph {"align":"center","className":"contact-icon"} -->
-                <p class="has-text-align-center contact-icon">📞</p>
-                <!-- /wp:paragraph -->
+		<!-- wp:group {"className":"contact-methods","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"2rem"}},"layout":{"type":"flex","justifyContent":"center","flexWrap":"nowrap"}} -->
+		<div class="wp-block-group contact-methods">
+			<!-- wp:group {"className":"contact-card","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group contact-card">
+				<!-- wp:paragraph {"align":"center","className":"contact-icon"} -->
+				<p class="has-text-align-center contact-icon">📞</p>
+				<!-- /wp:paragraph -->
 
-                <!-- wp:heading {"level":3} -->
-                <h3 class="wp-block-heading"><?php esc_html_e('Phone', 'enyoi'); ?></h3>
-                <!-- /wp:heading -->
+				<!-- wp:heading {"level":3} -->
+				<h3 class="wp-block-heading"><?php esc_html_e( 'Phone', 'enyoi' ); ?></h3>
+				<!-- /wp:heading -->
 
-                <!-- wp:paragraph -->
-                <p><?php esc_html_e('Reservations and inquiries can also be made by phone.', 'enyoi'); ?></p>
-                <!-- /wp:paragraph -->
+				<!-- wp:paragraph -->
+				<p><?php esc_html_e( 'Reservations and inquiries can also be made by phone.', 'enyoi' ); ?></p>
+				<!-- /wp:paragraph -->
 
-                <!-- wp:paragraph {"className":"contact-info"} -->
-                <p class="contact-info"><?php esc_html_e('03-0000-0000', 'enyoi'); ?></p>
-                <!-- /wp:paragraph -->
+				<!-- wp:paragraph {"className":"contact-info"} -->
+				<p class="contact-info"><?php esc_html_e( '03-0000-0000', 'enyoi' ); ?></p>
+				<!-- /wp:paragraph -->
 
-                <!-- wp:paragraph -->
-                <p><?php
-                    printf(
-                        /* translators: 1: opening time, 2: closing time */
-                        esc_html__( 'Business hours: %1$s - %2$s', 'enyoi' ),
-                        esc_html__( '10:00', 'enyoi' ),
-                        esc_html__( '20:00', 'enyoi' )
-                    );
-                ?></p>
-                <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:group -->
+				<!-- wp:paragraph -->
+				<p>
+				<?php
+					printf(
+						/* translators: 1: opening time, 2: closing time */
+						esc_html__( 'Business hours: %1$s - %2$s', 'enyoi' ),
+						esc_html__( '10:00', 'enyoi' ),
+						esc_html__( '20:00', 'enyoi' )
+					);
+					?>
+				</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
 
-            <!-- wp:group {"className":"contact-card","layout":{"type":"constrained"}} -->
-            <div class="wp-block-group contact-card"><!-- wp:paragraph {"align":"center","className":"contact-icon"} -->
-                <p class="has-text-align-center contact-icon">✉️</p>
-                <!-- /wp:paragraph -->
+			<!-- wp:group {"className":"contact-card","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group contact-card"><!-- wp:paragraph {"align":"center","className":"contact-icon"} -->
+				<p class="has-text-align-center contact-icon">✉️</p>
+				<!-- /wp:paragraph -->
 
-                <!-- wp:heading {"level":3} -->
-                <h3 class="wp-block-heading"><?php esc_html_e('Email', 'enyoi'); ?></h3>
-                <!-- /wp:heading -->
+				<!-- wp:heading {"level":3} -->
+				<h3 class="wp-block-heading"><?php esc_html_e( 'Email', 'enyoi' ); ?></h3>
+				<!-- /wp:heading -->
 
-                <!-- wp:paragraph -->
-                <p><?php esc_html_e('Please send us a message using the contact form.', 'enyoi'); ?></p>
-                <!-- /wp:paragraph -->
+				<!-- wp:paragraph -->
+				<p><?php esc_html_e( 'Please send us a message using the contact form.', 'enyoi' ); ?></p>
+				<!-- /wp:paragraph -->
 
-                <!-- wp:paragraph {"className":"contact-info"} -->
-                <p class="contact-info"><a class="btn" href="#"><?php esc_html_e('Contact form', 'enyoi'); ?></a></p>
-                <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-    </div>
-    <!-- /wp:group -->
+				<!-- wp:paragraph {"className":"contact-info"} -->
+				<p class="contact-info"><a class="btn" href="#"><?php esc_html_e( 'Contact form', 'enyoi' ); ?></a></p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
 
-    <!-- wp:spacer {"style":{"layout":{}}} -->
-    <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
+	<!-- wp:spacer {"style":{"layout":{}}} -->
+	<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
 </section>
 <!-- /wp:group -->

@@ -7,7 +7,7 @@ Tags: block-patterns, block-styles, one-column, custom-logo, editor-style, featu
 Requires at least: 6.6
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.6
+Stable tag: 1.8
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -76,11 +76,16 @@ Yes, Enyoi is fully responsive and mobile-friendly.
 
 == Changelog ==
 
+= 1.8 =
+* Theme.json bug fixed
+
+= 1.7 =
+* Theme.json changed
+
 = 1.6 =
 * Compatible with WordPress 7.0
 * Design changed
 * Screenshot changed
-
 
 = 1.5 =
 * Security: Fixed escaping in pattern files

@@ -1,10 +1,12 @@
 <?php
-
 /**
  * Title: Query Loop
  * Slug: enyoi/query-loop
  * Categories: enyoi_patterns
+ *
+ * @package enyoi
  */
+
 ?>
 <!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"align":"full","layout":{"type":"default"}} -->
 <div class="wp-block-query alignfull">

@@ -1,10 +1,12 @@
 <?php
-
 /**
  * Title: Query Loop List
  * Slug: enyoi/query-loop-list
  * Categories: enyoi_patterns
+ *
+ * @package enyoi
  */
+
 ?>
 <!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-medium-posts","name":"左に画像"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"constrained","wideSize":"1200px"}} -->
