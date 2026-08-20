@@ -17,7 +17,7 @@
 	<h2 class="wp-block-heading has-2x-large-font-size"><?php esc_html_e( 'More Posts', 'enyoi' ); ?></h2>
 	<!-- /wp:heading -->
 
-	<!-- wp:query {"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"グリッド"},"layout":{"type":"constrained","contentSize":"100%"},"className":"more-posts"} -->
+	<!-- wp:query {"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"},"layout":{"type":"constrained","contentSize":"100%"},"className":"more-posts"} -->
 	<div class="wp-block-query more-posts">
 		<!-- wp:post-template {"style":{"spacing":{"blockGap":"1.5rem"}},"layout":{"type":"grid","columnCount":3}} -->
 		<!-- wp:group {"className":"more-posts-item", "layout":{"type":"constrained"} -->

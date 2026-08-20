@@ -1,17 +1,17 @@
 === Enyoi Theme ===
 
 Theme Name: Enyoi
-Contributors: miroku
+Contributors: 369work
 Author URI: https://profiles.wordpress.org/369work/
-Tags: block-patterns, block-styles, one-column, custom-logo, editor-style, featured-images, full-site-editing, translation-ready
+Tags: blog, portfolio, one-column, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, threaded-comments, translation-ready, wide-blocks
 Requires at least: 6.6
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.8
+Stable tag: 1.9
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Enyoi is a modern, minimalistic WordPress theme designed for full site editing. It features a clean layout, responsive design, and is optimized for performance. Perfect for beauty salons, and small business websites.
+Enyoi is a clean, modern block theme for full site editing. It pairs a calm, warm palette with generous whitespace, and ships with ready-made patterns for a hero, services, staff and contact section. Well suited to blogs, portfolios, salons and small business sites.
 
 == Copyright ==
 
@@ -33,15 +33,20 @@ along with this program. If not, see https://www.gnu.org/licenses/gpl-3.0.html.
 
 == Description ==
 
-Enyoi is a versatile WordPress theme perfect for blogs, beauty salons and personal websites. It features a clean, modern design with responsive layout that looks great on all devices.
+Enyoi is a block theme built for the WordPress Site Editor. Every template, header and footer is editable in the browser with no page builder and no custom options panel to learn.
+
+It keeps a calm, warm palette and plenty of whitespace, so text stays readable and images carry the page. The bundled patterns cover a hero, services, staff and contact section, which makes it quick to assemble a blog, a portfolio, a salon site or a small business site.
 
 Key Features:
-* Responsive design
-* Custom menu support
+* Full site editing with block templates and template parts
+* Block patterns for hero, services, staff and contact sections
+* Custom color palette and font sizes via theme.json
+* Custom logo and navigation
 * Featured images
 * Threaded comments
+* Wide and full width blocks
 * Translation ready
-* Fast loading
+* No jQuery, no external font or script requests
 
 == Installation ==
 1. Go to "Appearance" → "Themes" in the admin panel
@@ -75,6 +80,13 @@ Yes, Enyoi is fully responsive and mobile-friendly.
 
 
 == Changelog ==
+
+= 1.9 =
+* Compatible with WordPress 7.1
+* theme.json: Translated color, gradient, font family and template part names to English
+* languages: Added Japanese translations for the theme.json strings
+* style.css / readme.txt: Updated theme tags and description
+* Patterns and templates: Translated editor-facing block names to English
 
 = 1.8 =
 * Theme.json bug fixed

@@ -20,88 +20,88 @@
             "gradients": [
                 {
                     "gradient": "linear-gradient(135deg, #e5e7eb 0%, #9ca3af 100%)",
-                    "name": "グレイグラデーション",
+                    "name": "Gray Gradient",
                     "slug": "gray-gradient"
                 },
                 {
                     "gradient": "linear-gradient(135deg, #f0f9ff 0%, #7dd3fc 100%)",
-                    "name": "スカイグラデーション",
+                    "name": "Sky Gradient",
                     "slug": "sky-gradient"
                 }
             ],
             "palette": [
                 {
-                    "name": "プライマリ",
+                    "name": "Primary",
                     "slug": "primary",
                     "color": "#c4897c"
                 },
                 {
-                    "name": "セカンダリ",
+                    "name": "Secondary",
                     "slug": "secondary",
                     "color": "#c09070"
                 },
                 {
-                    "name": "ターシャリ",
+                    "name": "Tertiary",
                     "slug": "tertiary",
                     "color": "#9b7c8a"
                 },
                 {
-                    "name": "アクセント",
+                    "name": "Accent",
                     "slug": "accent",
                     "color": "#10b981"
                 },
                 {
-                    "name": "プライマリダーク",
+                    "name": "Primary Dark",
                     "slug": "primary-dark",
                     "color": "#2d2d35"
                 },
                 {
-                    "name": "ライトグレー",
+                    "name": "Light Gray",
                     "slug": "light-gray",
                     "color": "#f5f0ed"
                 },
                 {
-                    "name": "テキストメイン",
+                    "name": "Text Main",
                     "slug": "text-main",
                     "color": "#2d2d35"
                 },
                 {
-                    "name": "テキストサブ",
+                    "name": "Text Sub",
                     "slug": "text-sub",
                     "color": "#cbd5e1"
                 },
                 {
-                    "name": "バックライト",
+                    "name": "Back Light",
                     "slug": "back-light",
                     "color": "#ebebef"
                 },
                 {
-                    "name": "ホワイト",
+                    "name": "White",
                     "slug": "white",
                     "color": "#FFFFFF"
                 },
                 {
-                    "name": "ブラック",
+                    "name": "Black",
                     "slug": "black",
                     "color": "#000000"
                 },
                 {
-                    "name": "イエロー",
+                    "name": "Yellow",
                     "slug": "yellow",
                     "color": "#eab308"
                 },
                 {
-                    "name": "レッド",
+                    "name": "Red",
                     "slug": "red",
                     "color": "#ef4444"
                 },
                 {
-                    "name": "テキストライト",
+                    "name": "Text Light",
                     "slug": "text-light",
                     "color": "#94a3b8"
                 },
                 {
-                    "name": "プライマリライト",
+                    "name": "Primary Light",
                     "slug": "primary-light",
                     "color": "#bae6fd"
                 }
@@ -121,17 +121,17 @@
             "fontFamilies": [
                 {
                     "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
-                    "name": "システム",
+                    "name": "System",
                     "slug": "system-font"
                 },
                 {
                     "fontFamily": "'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif",
-                    "name": "日本語",
+                    "name": "Japanese",
                     "slug": "japanese"
                 },
                 {
                     "fontFamily": "Georgia, 'Times New Roman', Times, serif",
-                    "name": "英字セリフ",
+                    "name": "Serif",
                     "slug": "serif"
                 }
             ],
@@ -433,12 +433,12 @@
     "templateParts": [
         {
             "name": "header",
-            "title": "ヘッダー",
+            "title": "Header",
             "area": "header"
         },
         {
             "name": "footer",
-            "title": "フッター",
+            "title": "Footer",
             "area": "footer"
         }
     ]

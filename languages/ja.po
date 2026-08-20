@@ -475,6 +475,119 @@ msgstr ""
 msgid "Tag"
 msgstr "タグ"
 
+# theme.json strings (translated with gettext context, see wp-includes/theme-i18n.json)
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr "プライマリ"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr "セカンダリ"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Tertiary"
+msgstr "ターシャリ"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr "アクセント"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary Dark"
+msgstr "プライマリダーク"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Light Gray"
+msgstr "ライトグレー"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Main"
+msgstr "テキストメイン"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Sub"
+msgstr "テキストサブ"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Back Light"
+msgstr "バックライト"
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr "ホワイト"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr "ブラック"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Yellow"
+msgstr "イエロー"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Red"
+msgstr "レッド"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Light"
+msgstr "テキストライト"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary Light"
+msgstr "プライマリライト"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gray Gradient"
+msgstr "グレイグラデーション"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Sky Gradient"
+msgstr "スカイグラデーション"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "System"
+msgstr "システム"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Japanese"
+msgstr "日本語"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Serif"
+msgstr "英字セリフ"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "ヘッダー"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "フッター"
+
+
 #~ msgid "Business hours"
 #~ msgstr "営業時間"
 

@@ -8,7 +8,7 @@
  */
 
 ?>
-<!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-medium-posts","name":"左に画像"}} -->
+<!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-medium-posts","name":"Image on Left"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"constrained","wideSize":"1200px"}} -->
 	<!-- wp:columns {"align":"wide","style":{"border":{"width":"1px"}},"borderColor":"text-light"} -->
 	<div class="wp-block-columns alignwide has-border-color has-text-light-border-color" style="border-width:1px"><!-- wp:column {"width":"66.66%"} -->
