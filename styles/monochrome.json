@@ -1,0 +1,135 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "title": "Monochrome",
+    "settings": {
+        "color": {
+            "gradients": [
+                {
+                    "gradient": "linear-gradient(135deg, #f7f6f4 0%, #dedcd8 100%)",
+                    "name": "Paper Gradient",
+                    "slug": "ivory-gradient"
+                },
+                {
+                    "gradient": "linear-gradient(135deg, #dedcd8 0%, #35373a 100%)",
+                    "name": "Charcoal Gradient",
+                    "slug": "gold-gradient"
+                },
+                {
+                    "gradient": "linear-gradient(135deg, #eeedeb 0%, #c9c7c3 100%)",
+                    "name": "Gray Gradient",
+                    "slug": "gray-gradient"
+                },
+                {
+                    "gradient": "linear-gradient(135deg, #f7f6f4 0%, #a8a6a1 100%)",
+                    "name": "Silver Gradient",
+                    "slug": "sky-gradient"
+                }
+            ],
+            "palette": [
+                {
+                    "name": "Primary",
+                    "slug": "primary",
+                    "color": "#35373a"
+                },
+                {
+                    "name": "Secondary",
+                    "slug": "secondary",
+                    "color": "#17181a"
+                },
+                {
+                    "name": "Tertiary",
+                    "slug": "tertiary",
+                    "color": "#74736f"
+                },
+                {
+                    "name": "Accent",
+                    "slug": "accent",
+                    "color": "#a8a6a1"
+                },
+                {
+                    "name": "Primary Dark",
+                    "slug": "primary-dark",
+                    "color": "#1b1c1e"
+                },
+                {
+                    "name": "Light Gray",
+                    "slug": "light-gray",
+                    "color": "#eeedeb"
+                },
+                {
+                    "name": "Text Main",
+                    "slug": "text-main",
+                    "color": "#17181a"
+                },
+                {
+                    "name": "Text Sub",
+                    "slug": "text-sub",
+                    "color": "#f2f1ef"
+                },
+                {
+                    "name": "Back Light",
+                    "slug": "back-light",
+                    "color": "#f7f6f4"
+                },
+                {
+                    "name": "White",
+                    "slug": "white",
+                    "color": "#FFFFFF"
+                },
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#000000"
+                },
+                {
+                    "name": "Yellow",
+                    "slug": "yellow",
+                    "color": "#eab308"
+                },
+                {
+                    "name": "Red",
+                    "slug": "red",
+                    "color": "#ef4444"
+                },
+                {
+                    "name": "Text Light",
+                    "slug": "text-light",
+                    "color": "#4a4b4e"
+                },
+                {
+                    "name": "Primary Light",
+                    "slug": "primary-light",
+                    "color": "#cfcdc8"
+                },
+                {
+                    "name": "Hairline",
+                    "slug": "hairline",
+                    "color": "#c9c7c3"
+                },
+                {
+                    "name": "Hairline Soft",
+                    "slug": "hairline-soft",
+                    "color": "#e4e2df"
+                }
+            ]
+        },
+        "custom": {
+            "color": {
+                "goldTint": "rgba(53, 55, 58, 0.08)",
+                "goldLine": "rgba(53, 55, 58, 0.28)",
+                "goldEdge": "rgba(53, 55, 58, 0.4)",
+                "ruleSoft": "rgba(74, 75, 78, 0.35)",
+                "navBg": "rgba(247, 246, 244, 0.96)",
+                "scrim": "rgba(247, 246, 244, 0.46)",
+                "wash": "rgba(23, 24, 26, 0.1)",
+                "phA": "#f2f1ef",
+                "phB": "#dedcd8",
+                "footerMuted": "rgba(242, 241, 239, 0.72)",
+                "footerRule": "rgba(207, 205, 200, 0.3)",
+                "footerRuleSoft": "rgba(242, 241, 239, 0.14)",
+                "footerSand": "#eceae6"
+            }
+        }
+    }
+}

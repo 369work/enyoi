@@ -2,14 +2,14 @@
 Theme Name: Enyoi
 Author: Miroku
 Author URI: https://profiles.wordpress.org/369work/
-Description: Enyoi is a clean, modern block theme for full site editing. It pairs a calm, warm palette with generous whitespace, and ships with ready-made patterns for a hero, services, staff and contact section. Well suited to blogs, portfolios, salons and small business sites.
-Version: 1.9
+Description: Enyoi is a refined block theme for full site editing. An ivory ground, gold accents and a serif display face give salons, clinics and small business sites an unhurried, editorial feel. It ships with a full-bleed hero, menu, staff, news and reservation patterns, plus Monochrome and Classic Rose style variations.
+Version: 2.0
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.1
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
-Tags: blog, portfolio, one-column, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, threaded-comments, translation-ready, wide-blocks
+Tags: blog, portfolio, one-column, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, style-variations, threaded-comments, translation-ready, wide-blocks
 Text Domain: enyoi
 Domain Path: /languages
 */
@@ -165,14 +165,23 @@ button {
     --wp--custom--header-height: 130px;
 }
 
-html,
-body {
+/* body に height:100% と overflow-x:hidden を同時に指定すると overflow-y が auto に
+   なり、body 自身がスクロールコンテナになる。すると window.scrollY が常に 0 になり、
+   固定ヘッダーのスクロール判定やスクロール駆動アニメーションが動かなくなるため、
+   横スクロールの抑制は html 側だけで行う。 */
+html {
     width: 100%;
-    height: 100%;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    line-height: 1.6;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     position: relative;
     line-height: 1.6;
 }
@@ -185,10 +194,15 @@ body {
 
 header {
     width: 100%;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     z-index: 100;
     position: relative;
     padding: 0;
+}
+
+/* 旧ヘッダーパターン (enyoi/header-main) の装飾。
+   v2 パターンが header 要素そのものを使えるよう、要素セレクタから移設 */
+.header {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     background-color: #fff;
 }
 
@@ -214,12 +228,17 @@ header h1.title-logo {
 
 footer {
     width: 100%;
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     position: relative;
     padding: 0;
 }
 
-footer::before {
+/* 旧フッターパターン (enyoi/footer-main) の装飾。要素セレクタから移設 */
+.footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    position: relative;
+}
+
+.footer::before {
     content: '';
     position: absolute;
     top: 0;

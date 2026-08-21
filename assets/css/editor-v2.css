@@ -1,0 +1,25 @@
+/**
+ * Enyoi 2.0 パターンのエディター内での見え方の調整。
+ *
+ * add_editor_style() に渡すファイルなので、セレクタは素のまま書く。
+ * .editor-styles-wrapper は WordPress 側で自動的に前置されるため、
+ * ここで自分で書くと二重になって効かなくなる。
+ * custom-v2.css より後に読み込むこと。
+ */
+
+/* 固定ヘッダーはエディター内では通常フローに戻す */
+.eny-nav {
+	position: relative;
+	top: auto;
+	right: auto;
+	left: auto;
+}
+
+/* 管理バーの高さはエディター内では引かない */
+.eny-hero.wp-block-cover {
+	min-height: 640px;
+}
+
+.eny-main-offset {
+	padding-top: 0;
+}

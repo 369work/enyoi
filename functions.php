@@ -22,7 +22,7 @@ function enyoi_theme_setup() {
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'align-wide' );
 	add_theme_support( 'editor-styles' );
-	add_editor_style( 'assets/css/editor-style.css' );
+	add_editor_style( array( 'assets/css/editor-style.css', 'assets/css/custom-v2.css', 'assets/css/editor-v2.css' ) );
 	add_theme_support( 'appearance-tools' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
@@ -54,6 +54,9 @@ function enyoi_enqueue_scripts() {
 	wp_enqueue_style( 'enyoi-style', get_stylesheet_uri(), array(), ENYOI_THEME_VERSION );
 
 	wp_enqueue_style( 'enyoi-custom-style', ENYOI_THEME_ASSETS . '/css/custom.css', array(), ENYOI_THEME_VERSION );
+
+	// 2.0 パターン (enyoi/*-v2) 用。旧 custom.css は残したまま追加で読み込む。
+	wp_enqueue_style( 'enyoi-custom-v2-style', ENYOI_THEME_ASSETS . '/css/custom-v2.css', array( 'enyoi-custom-style' ), ENYOI_THEME_VERSION );
 
 	wp_enqueue_script( 'enyoi-script', ENYOI_THEME_ASSETS . '/js/main.js', array(), ENYOI_THEME_VERSION, true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

@@ -3,15 +3,15 @@
 Theme Name: Enyoi
 Contributors: 369work
 Author URI: https://profiles.wordpress.org/369work/
-Tags: blog, portfolio, one-column, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, threaded-comments, translation-ready, wide-blocks
+Tags: blog, portfolio, one-column, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, style-variations, threaded-comments, translation-ready, wide-blocks
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.9
+Stable tag: 2.0
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Enyoi is a clean, modern block theme for full site editing. It pairs a calm, warm palette with generous whitespace, and ships with ready-made patterns for a hero, services, staff and contact section. Well suited to blogs, portfolios, salons and small business sites.
+Enyoi is a refined block theme for full site editing. An ivory ground, gold accents and a serif display face give salons, clinics and small business sites an unhurried, editorial feel. It ships with a full-bleed hero, menu, staff, news and reservation patterns, plus Monochrome and Classic Rose style variations.
 
 == Copyright ==
 
@@ -70,6 +70,7 @@ Yes, Enyoi is fully responsive and mobile-friendly.
 * All images used in this theme are created by 369work and licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
 * Screenshot : Copyright 369work. licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
 * Background Image(hero-background.webp) : Copyright 369work. licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
+* Background Image(hero-background-v2.webp) : Copyright 369work. licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
 * Icon(user.webp) : Copyright 369work. licensed under CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
 
 
@@ -80,6 +81,19 @@ Yes, Enyoi is fully responsive and mobile-friendly.
 
 
 == Changelog ==
+
+= 2.0 =
+* Redesigned the front page: ivory and gold palette, serif display headings, full-bleed hero
+* Added v2 patterns (header, hero, salon, menu, staff, blog, access, contact, footer). The 1.x patterns are kept and can still be inserted
+* Added an Access section. When the Enyoi Store Info plugin is active it renders the store details through the plugin, otherwise the theme shows its own default layout
+* Added Monochrome and Classic Rose style variations. Classic Rose reproduces the 1.x palette
+* theme.json: Remapped the palette to the new colors, added hairline colors and derived color tokens under settings.custom
+* Added assets/css/custom-v2.css for the v2 patterns. custom.css is untouched so existing pages keep their styling
+* Added assets/css/editor-v2.css for editor-only adjustments, loaded after custom-v2.css
+* style.css: Moved the header and footer decoration from the element selectors to the .header / .footer pattern classes
+* style.css: Split the html and body rules. Setting height 100% together with overflow-x hidden on body turned body into a scroll container, which stopped window.scrollY and scroll driven styling
+* theme.json: Replaced font size references whose slug contains a digit with literal values, because the var:preset notation does not kebab-case them
+* Fixed the heading scale so h3 to h6 keep their 1.x sizes
 
 = 1.9 =
 * Compatible with WordPress 7.1

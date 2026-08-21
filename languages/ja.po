@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: enyoi1.5\n"
-"POT-Creation-Date: 2026-02-25 20:07+0900\n"
-"PO-Revision-Date: 2026-02-25 20:09+0900\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/enyoi\n"
+"POT-Creation-Date: 2026-08-21T23:23:27+09:00\n"
+"PO-Revision-Date: 2026-08-22 01:26+0900\n"
 "Last-Translator: 369work\n"
 "Language-Team: 369work\n"
 "Language: ja\n"
@@ -16,375 +17,610 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
 
-#: functions.php:35
+#. Theme Name of the theme
+#: style.css:2 patterns/footer-main.php:135 patterns/footer-v2.php:111
+msgid "Enyoi"
+msgstr "Enyoi"
+
+#. Description of the theme
+#: style.css:5
+msgid ""
+"Enyoi is a refined block theme for full site editing. An ivory ground, gold "
+"accents and a serif display face give salons, clinics and small business "
+"sites an unhurried, editorial feel. It ships with a full-bleed hero, menu, "
+"staff, news and reservation patterns, plus Monochrome and Classic Rose style "
+"variations."
+msgstr ""
+"Enyoiは、サイト全体の編集に適した洗練されたブロックテーマです。アイボリーの地"
+"色、ゴールドのアクセント、セリフ体フォントが、サロン、クリニック、小規模ビジ"
+"ネスのサイトに、ゆったりとした編集的な雰囲気を与えます。フルブリードのヒー"
+"ローページ、メニュー、スタッフ紹介、ニュース、予約画面のパターンに加え、モノ"
+"クロとクラシックローズのスタイルバリエーションも付属しています。"
+
+#. Author of the theme
+#: style.css:3
+msgid "Miroku"
+msgstr "Miroku"
+
+#. Author URI of the theme
+#: style.css:4
+msgid "https://profiles.wordpress.org/369work/"
+msgstr "https://profiles.wordpress.org/369work/"
+
+#: functions.php:43
 msgid "Enyoi Patterns"
 msgstr "Enyoi パターン"
 
-#: functions.php:36
+#: functions.php:44
 msgid "Enyoi pattern collection"
 msgstr "Enyoi パターンコレクション"
 
-#: patterns/archive-header.php:17
+#: patterns/archive-header.php:3
+msgctxt "Pattern title"
+msgid "Archive Header"
+msgstr "Archive Header"
+
+#: patterns/archive-header.php:21
 msgid "Archive"
 msgstr "アーカイブ"
 
-#: patterns/author-header.php:17
+#: patterns/author-header.php:3
+msgctxt "Pattern title"
+msgid "Author Header"
+msgstr "Author Header"
+
+#: patterns/author-header.php:20
 msgid "Author"
 msgstr "投稿者"
 
-#: patterns/blog-post.php:14 patterns/home-header.php:17
+#: patterns/blog-post-v2.php:3
+msgctxt "Pattern title"
+msgid "Blog Post (v2)"
+msgstr "Blog Post (v2)"
+
+#: patterns/blog-post-v2.php:18 patterns/blog-post.php:17
+#: patterns/home-header.php:19
 msgid "BLOG"
 msgstr "BLOG"
 
-#: patterns/blog-post.php:14
+#: patterns/blog-post-v2.php:22 patterns/blog-post.php:17
 msgid "Latest Posts"
 msgstr "最新の投稿"
 
-#: patterns/category-header.php:17
+#: patterns/blog-post.php:3
+msgctxt "Pattern title"
+msgid "Blog Post"
+msgstr "Blog Post"
+
+#: patterns/category-header.php:3
+msgctxt "Pattern title"
+msgid "Category Header"
+msgstr "Category Header"
+
+#: patterns/category-header.php:20
 msgid "Category"
 msgstr "カテゴリー"
 
-#: patterns/comments.php:12
+#: patterns/comments.php:3
+msgctxt "Pattern title"
 msgid "Comments"
 msgstr "コメント"
 
-#: patterns/contact-section.php:12
+#: patterns/comments.php:14
+msgid "Comments"
+msgstr "コメント"
+
+#: patterns/contact-section-v2.php:3
+msgctxt "Pattern title"
+msgid "Contact Section (v2)"
+msgstr "Contact Section (v2)"
+
+#: patterns/contact-section-v2.php:18 patterns/contact-section.php:14
 msgid "RESERVE"
 msgstr "RESERVE"
 
-#: patterns/contact-section.php:12
+#: patterns/contact-section-v2.php:22 patterns/contact-section.php:14
 msgid "About Reservations"
 msgstr "ご予約について"
 
-#: patterns/contact-section.php:24
+#: patterns/contact-section-v2.php:36 patterns/contact-section.php:26
 msgid "Phone"
 msgstr "お電話"
 
-#: patterns/contact-section.php:28
+#: patterns/contact-section-v2.php:40 patterns/contact-section.php:30
 msgid "Reservations and inquiries can also be made by phone."
 msgstr "ご予約やお問い合わせはお電話でも承っております。"
 
-#: patterns/contact-section.php:32 patterns/footer-main.php:89
+#: patterns/contact-section-v2.php:44 patterns/contact-section.php:34
+#: patterns/footer-main.php:91 patterns/footer-v2.php:65
 msgid "03-0000-0000"
 msgstr "03-0000-0000"
 
-#: patterns/contact-section.php:54
+#. translators: 1: opening time, 2: closing time
+#: patterns/contact-section-v2.php:52 patterns/contact-section.php:42
+#, php-format
+msgid "Business hours: %1$s - %2$s"
+msgstr "営業時間: %1$s - %2$s"
+
+#: patterns/contact-section-v2.php:53 patterns/contact-section.php:43
+#: patterns/footer-main.php:100 patterns/footer-v2.php:70
+msgid "10:00"
+msgstr "10:00"
+
+#: patterns/contact-section-v2.php:54 patterns/contact-section.php:44
+#: patterns/footer-main.php:101 patterns/footer-v2.php:71
+msgid "20:00"
+msgstr "20:00"
+
+#: patterns/contact-section-v2.php:69 patterns/contact-section.php:58
 msgid "Email"
 msgstr "メール"
 
-#: patterns/contact-section.php:58
+#: patterns/contact-section-v2.php:73 patterns/contact-section.php:62
 msgid "Please send us a message using the contact form."
 msgstr "お問い合わせフォームからメッセージをお送りください。"
 
-#: patterns/contact-section.php:62
+#: patterns/contact-section-v2.php:79 patterns/contact-section.php:66
 msgid "Contact form"
 msgstr "お問い合わせフォーム"
 
-#: patterns/footer-main.php:26
+#: patterns/contact-section.php:3
+msgctxt "Pattern title"
+msgid "Contact Section"
+msgstr "Contact Section"
+
+#: patterns/footer-main.php:3
+msgctxt "Pattern title"
+msgid "Main Footer"
+msgstr "Main Footer"
+
+#: patterns/footer-main.php:28 patterns/footer-v2.php:22
 msgid ""
 "With the best techniques and space, we will bring out your beauty. We offer "
 "relaxation for the mind and body and help you discover a new you."
 msgstr ""
-"最高の技術と空間で、あなたの美しさを引き出します。 心と体のリラクゼーション"
-"を提供し、新しい自分との出会いをお手伝いします。"
+"最高の技術と空間で、あなたの美しさを引き出します。 心と体のリラクゼーションを"
+"提供し、新しい自分との出会いをお手伝いします。"
 
-#: patterns/footer-main.php:47 patterns/menu-section.php:13
+#: patterns/footer-main.php:49 patterns/footer-v2.php:30
+#: patterns/footer-v2.php:38 patterns/menu-section-v2.php:23
+#: patterns/menu-section.php:15
 msgid "Menu"
 msgstr "メニュー"
 
-#: patterns/footer-main.php:63
+#: patterns/footer-main.php:65 patterns/footer-v2.php:58
 msgid "Info"
 msgstr "インフォメーション"
 
-#: patterns/footer-main.php:77
+#: patterns/footer-main.php:79 patterns/footer-v2.php:63
 msgid "Store"
 msgstr "店舗情報"
 
-#: patterns/footer-main.php:85
+#: patterns/footer-main.php:87 patterns/footer-v2.php:64
 msgid "Jingumae, Shibuya-ku, Tokyo"
 msgstr "東京都渋谷区神宮前"
 
-#: patterns/footer-main.php:125
+#. translators: 1: opening time, 2: closing time, 3: closed day
+#. translators: 1: opening time, 2: closing time, 3: regular holiday
+#: patterns/footer-main.php:99 patterns/footer-v2.php:69
+#, php-format
+msgid "%1$s - %2$s (Closed: %3$s)"
+msgstr "%1$s - %2$s（定休日: %3$s）"
+
+#: patterns/footer-main.php:102 patterns/footer-v2.php:72
+msgid "Tue"
+msgstr "火曜日"
+
+#. translators: %s: station name and distance
+#. translators: %s: nearest station and walking time
+#: patterns/footer-main.php:113 patterns/footer-v2.php:79
+#, php-format
+msgid "Nearest station: %s"
+msgstr "最寄駅: %s"
+
+#: patterns/footer-main.php:114 patterns/footer-v2.php:80
+msgid "Meiji Jingu-mae 4-minute walk"
+msgstr "明治神宮前徒歩4分"
+
+#: patterns/footer-main.php:131
 msgid "Copyright "
 msgstr "Copyright "
 
-#: patterns/footer-main.php:125
+#: patterns/footer-main.php:131
 msgid "All rights reserved."
 msgstr "All rights reserved."
 
-#: patterns/footer-main.php:129
+#: patterns/footer-main.php:135
 msgid "Designed by "
 msgstr "Designed by "
 
-#: patterns/footer-main.php:129
-msgid "Enyoi"
-msgstr "Enyoi"
+#: patterns/footer-v2.php:3
+msgctxt "Pattern title"
+msgid "Main Footer (v2)"
+msgstr "Main Footer (v2)"
 
-#: patterns/hero-section.php:18
-msgid "Beauty<br>Redefined<br>Salon"
-msgstr "美しさを<br>追求する<br>サロン"
+#: patterns/footer-v2.php:34
+msgid "Salon"
+msgstr "サロン"
 
-#: patterns/hero-section.php:24
-msgid "We bring out your beauty with the best technology and space."
-msgstr "最高の技術と空間で、あなたの美しさを引き出します。"
-
-#: patterns/hero-section.php:30
-msgid "Reservation"
-msgstr "予約する"
-
-#: patterns/hero-section.php:38
-msgid "Popular Menu"
-msgstr "人気メニュー"
-
-#: patterns/hero-section.php:44
-msgid "Cut"
-msgstr "カット"
-
-#: patterns/hero-section.php:44
-msgid "￥5,000"
-msgstr "￥5,000"
-
-#: patterns/hero-section.php:48
-msgid "Color"
-msgstr "カラー"
-
-#: patterns/hero-section.php:48
-msgid "￥8,000"
-msgstr "￥8,000"
-
-#: patterns/hero-section.php:52
-msgid "Perm"
-msgstr "パーマ"
-
-#: patterns/hero-section.php:52
-msgid "￥10,000"
-msgstr "￥10,000"
-
-#: patterns/home-header.php:17
-msgid "Blog"
-msgstr "ブログ"
-
-#: patterns/menu-section.php:13
-msgid "MENU"
-msgstr "MENU"
-
-#: patterns/menu-section.php:19
-msgid "Cut and Styling"
-msgstr "カット・スタイリング"
-
-#: patterns/menu-section.php:25
-msgid "Ladies Cut"
-msgstr "レディースカット"
-
-#: patterns/menu-section.php:29
-msgid "From trendy styles to haircuts that suit you"
-msgstr "トレンドを取り入れたスタイルからお客様に似合うカットまで"
-
-#: patterns/menu-section.php:33 patterns/menu-section.php:118
-msgid "￥4,500〜"
-msgstr "￥4,500〜"
-
-#: patterns/menu-section.php:40
-msgid "Mens Cut"
-msgstr "メンズカット"
-
-#: patterns/menu-section.php:44
-msgid "A sophisticated style that is also suitable for business occasions"
-msgstr "ビジネスシーンにも対応した洗練されたスタイル"
-
-#: patterns/menu-section.php:48
-msgid "￥3,500〜"
-msgstr "￥3,500〜"
-
-#: patterns/menu-section.php:55
-msgid "Shampoo and blow dry"
-msgstr "シャンプー・ブロー"
-
-#: patterns/menu-section.php:59
-msgid "Refresh your scalp with scalp care and styling"
-msgstr "頭皮ケアとスタイリングでリフレッシュ"
-
-#: patterns/menu-section.php:63 patterns/menu-section.php:228
-msgid "￥2,500"
-msgstr "￥2,500"
-
-#: patterns/menu-section.php:74
-msgid "Coloring"
-msgstr "カラーリング"
-
-#: patterns/menu-section.php:80
-msgid "Full Color"
-msgstr "フルカラー"
-
-#: patterns/menu-section.php:84
-msgid "A complete color change gives a fresh impression"
-msgstr "全体的なカラーチェンジで印象を一新"
-
-#: patterns/menu-section.php:88
-msgid "￥6,500〜"
-msgstr "￥6,500〜"
-
-#: patterns/menu-section.php:95
-msgid "Highlights and Lowlights"
-msgstr "ハイライト・ローライト"
-
-#: patterns/menu-section.php:99
-msgid "A three-dimensional finish with depth"
-msgstr "立体感と奥行きのある仕上がり"
-
-#: patterns/menu-section.php:103 patterns/menu-section.php:173
-msgid "￥8,500〜"
-msgstr "￥8,500〜"
-
-#: patterns/menu-section.php:110
-msgid "Retouch Color"
-msgstr "リタッチカラー"
-
-#: patterns/menu-section.php:114
-msgid "Thoroughly covers problem areas around the roots"
-msgstr "根元の気になる部分をしっかりカバー"
-
-#: patterns/menu-section.php:129
-msgid "Perm and Straight"
-msgstr "パーマ・ストレート"
-
-#: patterns/menu-section.php:135
-msgid "Digital perm"
-msgstr "デジタルパーマ"
-
-#: patterns/menu-section.php:139
-msgid "Long-lasting, beautiful curl style"
-msgstr "持続性の高い美しいカールスタイル"
-
-#: patterns/menu-section.php:143
-msgid "￥9,500〜"
-msgstr "￥9,500〜"
-
-#: patterns/menu-section.php:150
-msgid "Hair straightening"
-msgstr "縮毛矯正"
-
-#: patterns/menu-section.php:154
-msgid "Turn curly hair into naturally straight hair"
-msgstr "くせ毛を自然なストレートヘアに"
-
-#: patterns/menu-section.php:158
-msgid "￥12,000〜"
-msgstr "￥12,000〜"
-
-#: patterns/menu-section.php:165
-msgid "Air Wave"
-msgstr "エアウェーブ"
-
-#: patterns/menu-section.php:169
-msgid "Soft and natural wave style"
-msgstr "ふんわり自然なウェーブスタイル"
-
-#: patterns/menu-section.php:184
-msgid "Head spa treatment"
-msgstr "ヘッドスパ・トリートメント"
-
-#: patterns/menu-section.php:190
-msgid "Relaxation Spa"
-msgstr "リラクゼーションスパ"
-
-#: patterns/menu-section.php:194
-msgid "Relaxing scalp massage"
-msgstr "頭皮マッサージでリラックス効果"
-
-#: patterns/menu-section.php:198
-msgid "￥3,500"
-msgstr "￥3,500"
-
-#: patterns/menu-section.php:205
-msgid "Intensive Repair Treatment"
-msgstr "集中補修トリートメント"
-
-#: patterns/menu-section.php:209
-msgid "Intensive care for damaged hair"
-msgstr "ダメージヘアを集中的にケア"
-
-#: patterns/menu-section.php:213
-msgid "￥4,500"
-msgstr "￥4,500"
-
-#: patterns/menu-section.php:220
-msgid "Carbonated Spa"
-msgstr "炭酸スパ"
-
-#: patterns/menu-section.php:224
-msgid "Carbonation effect improves scalp environment"
-msgstr "炭酸効果で頭皮環境を改善"
-
-#: patterns/more-posts.php:15
-msgid "More Posts"
-msgstr "その他の投稿"
-
-#: patterns/news-section.php:14
-msgid "NEWS"
-msgstr "NEWS"
-
-#: patterns/news-section.php:14
+#: patterns/footer-v2.php:42 patterns/news-section.php:16
 msgid "News"
 msgstr "お知らせ"
 
-#: patterns/news-section.php:22
+#: patterns/footer-v2.php:46
+msgid "Staff"
+msgstr "スタッフ"
+
+#: patterns/footer-v2.php:50
+msgid "Reserve"
+msgstr "ご予約"
+
+#. translators: 1: copyright year, 2: site name
+#: patterns/footer-v2.php:97
+#, php-format
+msgid "Copyright &copy; %1$s %2$s. All rights reserved."
+msgstr "Copyright &copy; %1$s %2$s. All rights reserved."
+
+#. translators: %s: theme name
+#: patterns/footer-v2.php:110
+#, php-format
+msgid "Designed by %s"
+msgstr "Designed by %s"
+
+#: patterns/header-main.php:3
+msgctxt "Pattern title"
+msgid "Main Header"
+msgstr "Main Header"
+
+#: patterns/header-v2.php:3
+msgctxt "Pattern title"
+msgid "Main Header (v2)"
+msgstr "Main Header (v2)"
+
+#: patterns/header-v2.php:28 patterns/hero-section-v2.php:34
+#: patterns/hero-section.php:32 patterns/staff-section-v2.php:61
+#: patterns/staff-section-v2.php:101
+msgid "Reservation"
+msgstr "予約する"
+
+#: patterns/hero-section-v2.php:3
+msgctxt "Pattern title"
+msgid "Hero Section (v2)"
+msgstr "Hero Section (v2)"
+
+#: patterns/hero-section-v2.php:20
+msgid "Redefining Beauty"
+msgstr "Redefining Beauty"
+
+#: patterns/hero-section-v2.php:24
+msgid "Beauty Redefined Salon"
+msgstr "美しさを追求するサロン"
+
+#: patterns/hero-section-v2.php:28 patterns/hero-section.php:26
+msgid "We bring out your beauty with the best technology and space."
+msgstr "最高の技術と空間で、あなたの美しさを引き出します。"
+
+#: patterns/hero-section-v2.php:46 patterns/hero-section.php:46
+msgid "Cut"
+msgstr "カット"
+
+#: patterns/hero-section-v2.php:46 patterns/hero-section.php:46
+msgid "￥5,000"
+msgstr "￥5,000"
+
+#: patterns/hero-section-v2.php:50 patterns/hero-section.php:50
+msgid "Color"
+msgstr "カラー"
+
+#: patterns/hero-section-v2.php:50 patterns/hero-section.php:50
+msgid "￥8,000"
+msgstr "￥8,000"
+
+#: patterns/hero-section-v2.php:54 patterns/hero-section.php:54
+msgid "Perm"
+msgstr "パーマ"
+
+#: patterns/hero-section-v2.php:54 patterns/hero-section.php:54
+msgid "￥10,000"
+msgstr "￥10,000"
+
+#: patterns/hero-section.php:3
+msgctxt "Pattern title"
+msgid "Hero Section"
+msgstr "Hero Section"
+
+#: patterns/hero-section.php:20
+msgid "Beauty<br>Redefined<br>Salon"
+msgstr "美しさを<br>追求する<br>サロン"
+
+#: patterns/hero-section.php:40
+msgid "Popular Menu"
+msgstr "人気メニュー"
+
+#: patterns/home-header.php:3
+msgctxt "Pattern title"
+msgid "Blog Header"
+msgstr "Blog Header"
+
+#: patterns/home-header.php:19
+msgid "Blog"
+msgstr "ブログ"
+
+#: patterns/menu-section-v2.php:3
+msgctxt "Pattern title"
+msgid "Menu Section (v2)"
+msgstr "Menu Section (v2)"
+
+#: patterns/menu-section-v2.php:19 patterns/menu-section.php:15
+msgid "MENU"
+msgstr "MENU"
+
+#: patterns/menu-section-v2.php:33 patterns/menu-section.php:21
+msgid "Cut and Styling"
+msgstr "カット・スタイリング"
+
+#: patterns/menu-section-v2.php:49 patterns/menu-section.php:27
+msgid "Ladies Cut"
+msgstr "レディースカット"
+
+#: patterns/menu-section-v2.php:53 patterns/menu-section-v2.php:174
+#: patterns/menu-section.php:35 patterns/menu-section.php:120
+msgid "￥4,500〜"
+msgstr "￥4,500〜"
+
+#: patterns/menu-section-v2.php:59 patterns/menu-section.php:31
+msgid "From trendy styles to haircuts that suit you"
+msgstr "トレンドを取り入れたスタイルからお客様に似合うカットまで"
+
+#: patterns/menu-section-v2.php:69 patterns/menu-section.php:42
+msgid "Mens Cut"
+msgstr "メンズカット"
+
+#: patterns/menu-section-v2.php:73 patterns/menu-section.php:50
+msgid "￥3,500〜"
+msgstr "￥3,500〜"
+
+#: patterns/menu-section-v2.php:79 patterns/menu-section.php:46
+msgid "A sophisticated style that is also suitable for business occasions"
+msgstr "ビジネスシーンにも対応した洗練されたスタイル"
+
+#: patterns/menu-section-v2.php:89 patterns/menu-section.php:57
+msgid "Shampoo and blow dry"
+msgstr "シャンプー・ブロー"
+
+#: patterns/menu-section-v2.php:93 patterns/menu-section-v2.php:322
+#: patterns/menu-section.php:65 patterns/menu-section.php:230
+msgid "￥2,500"
+msgstr "￥2,500"
+
+#: patterns/menu-section-v2.php:99 patterns/menu-section.php:61
+msgid "Refresh your scalp with scalp care and styling"
+msgstr "頭皮ケアとスタイリングでリフレッシュ"
+
+#: patterns/menu-section-v2.php:114 patterns/menu-section.php:76
+msgid "Coloring"
+msgstr "カラーリング"
+
+#: patterns/menu-section-v2.php:130 patterns/menu-section.php:82
+msgid "Full Color"
+msgstr "フルカラー"
+
+#: patterns/menu-section-v2.php:134 patterns/menu-section.php:90
+msgid "￥6,500〜"
+msgstr "￥6,500〜"
+
+#: patterns/menu-section-v2.php:140 patterns/menu-section.php:86
+msgid "A complete color change gives a fresh impression"
+msgstr "全体的なカラーチェンジで印象を一新"
+
+#: patterns/menu-section-v2.php:150 patterns/menu-section.php:97
+msgid "Highlights and Lowlights"
+msgstr "ハイライト・ローライト"
+
+#: patterns/menu-section-v2.php:154 patterns/menu-section-v2.php:253
+#: patterns/menu-section.php:105 patterns/menu-section.php:175
+msgid "￥8,500〜"
+msgstr "￥8,500〜"
+
+#: patterns/menu-section-v2.php:160 patterns/menu-section.php:101
+msgid "A three-dimensional finish with depth"
+msgstr "立体感と奥行きのある仕上がり"
+
+#: patterns/menu-section-v2.php:170 patterns/menu-section.php:112
+msgid "Retouch Color"
+msgstr "リタッチカラー"
+
+#: patterns/menu-section-v2.php:180 patterns/menu-section.php:116
+msgid "Thoroughly covers problem areas around the roots"
+msgstr "根元の気になる部分をしっかりカバー"
+
+#: patterns/menu-section-v2.php:203 patterns/menu-section.php:131
+msgid "Perm and Straight"
+msgstr "パーマ・ストレート"
+
+#: patterns/menu-section-v2.php:217 patterns/menu-section.php:137
+msgid "Digital perm"
+msgstr "デジタルパーマ"
+
+#: patterns/menu-section-v2.php:221 patterns/menu-section.php:145
+msgid "￥9,500〜"
+msgstr "￥9,500〜"
+
+#: patterns/menu-section-v2.php:225 patterns/menu-section.php:141
+msgid "Long-lasting, beautiful curl style"
+msgstr "持続性の高い美しいカールスタイル"
+
+#: patterns/menu-section-v2.php:233 patterns/menu-section.php:152
+msgid "Hair straightening"
+msgstr "縮毛矯正"
+
+#: patterns/menu-section-v2.php:237 patterns/menu-section.php:160
+msgid "￥12,000〜"
+msgstr "￥12,000〜"
+
+#: patterns/menu-section-v2.php:241 patterns/menu-section.php:156
+msgid "Turn curly hair into naturally straight hair"
+msgstr "くせ毛を自然なストレートヘアに"
+
+#: patterns/menu-section-v2.php:249 patterns/menu-section.php:167
+msgid "Air Wave"
+msgstr "エアウェーブ"
+
+#: patterns/menu-section-v2.php:257 patterns/menu-section.php:171
+msgid "Soft and natural wave style"
+msgstr "ふんわり自然なウェーブスタイル"
+
+#: patterns/menu-section-v2.php:272 patterns/menu-section.php:186
+msgid "Head spa treatment"
+msgstr "ヘッドスパ・トリートメント"
+
+#: patterns/menu-section-v2.php:286 patterns/menu-section.php:192
+msgid "Relaxation Spa"
+msgstr "リラクゼーションスパ"
+
+#: patterns/menu-section-v2.php:290 patterns/menu-section.php:200
+msgid "￥3,500"
+msgstr "￥3,500"
+
+#: patterns/menu-section-v2.php:294 patterns/menu-section.php:196
+msgid "Relaxing scalp massage"
+msgstr "頭皮マッサージでリラックス効果"
+
+#: patterns/menu-section-v2.php:302 patterns/menu-section.php:207
+msgid "Intensive Repair Treatment"
+msgstr "集中補修トリートメント"
+
+#: patterns/menu-section-v2.php:306 patterns/menu-section.php:215
+msgid "￥4,500"
+msgstr "￥4,500"
+
+#: patterns/menu-section-v2.php:310 patterns/menu-section.php:211
+msgid "Intensive care for damaged hair"
+msgstr "ダメージヘアを集中的にケア"
+
+#: patterns/menu-section-v2.php:318 patterns/menu-section.php:222
+msgid "Carbonated Spa"
+msgstr "炭酸スパ"
+
+#: patterns/menu-section-v2.php:326 patterns/menu-section.php:226
+msgid "Carbonation effect improves scalp environment"
+msgstr "炭酸効果で頭皮環境を改善"
+
+#: patterns/menu-section.php:3
+msgctxt "Pattern title"
+msgid "Menu Section"
+msgstr "Menu Section"
+
+#: patterns/more-posts.php:3
+msgctxt "Pattern title"
+msgid "More posts"
+msgstr "More posts"
+
+#: patterns/more-posts.php:17
+msgid "More Posts"
+msgstr "その他の投稿"
+
+#: patterns/news-section.php:3
+msgctxt "Pattern title"
+msgid "News Section"
+msgstr "News Section"
+
+#: patterns/news-section.php:16
+msgid "NEWS"
+msgstr "NEWS"
+
+#: patterns/news-section.php:24
 msgid "2025.03.01"
 msgstr "2025.03.01"
 
-#: patterns/news-section.php:26
+#: patterns/news-section.php:28
 msgid "New Spring Menu"
 msgstr "春の新メニュー登場"
 
-#: patterns/news-section.php:30
+#: patterns/news-section.php:32
 msgid "New spring hairstyles and seasonal head spa menus have arrived."
 msgstr "春の新作ヘアスタイルと、季節限定のヘッドスパメニューが登場しました。"
 
-#: patterns/news-section.php:34 patterns/news-section.php:54
+#: patterns/news-section.php:36 patterns/news-section.php:56
 msgid "Read more"
 msgstr "もっと見る"
 
-#: patterns/news-section.php:42
+#: patterns/news-section.php:44
 msgid "2025.2.15"
 msgstr "2025.2.15"
 
-#: patterns/news-section.php:46
+#: patterns/news-section.php:48
 msgid "Announcement of new stylist"
 msgstr "新スタイリスト加入のお知らせ"
 
-#: patterns/news-section.php:50
+#: patterns/news-section.php:52
 msgid "Two new stylists have joined us."
 msgstr "新たに2名のスタイリストが加入いたしました。"
 
-#: patterns/no-results.php:12
+#: patterns/no-results.php:3
+msgctxt "Pattern title"
+msgid "No Results"
+msgstr "No Results"
+
+#: patterns/no-results.php:14
 msgid ""
 "Sorry, we could not find anything. Try searching with different keywords."
 msgstr ""
 "申し訳ございませんが、何も見つかりませんでした。別のキーワードで検索してみて"
 "ください。"
 
-#: patterns/page-404.php:18
+#: patterns/page-404.php:3
+msgctxt "Pattern title"
+msgid "Page 404"
+msgstr "Page 404"
+
+#: patterns/page-404.php:20
 msgid "404"
 msgstr "404"
 
-#: patterns/page-404.php:22
+#: patterns/page-404.php:24
 msgid "Sorry, the page you are looking for does not exist."
 msgstr "申し訳ありませんが、お探しのページは存在しません。"
 
-#: patterns/page-404.php:28
+#. translators: %s: Home page link
+#: patterns/page-404.php:31
 #, php-format
 msgid "Please go back to %s or try searching for a different word."
 msgstr "%sに戻るか、他のワードを検索してみてください。"
 
-#: patterns/salon-section.php:12
-msgid "ABOUT"
-msgstr "ABOUT"
+#: patterns/page-404.php:32
+msgid "TOP"
+msgstr "トップ"
 
-#: patterns/salon-section.php:12
+#: patterns/post-navigation.php:3
+msgctxt "Pattern title"
+msgid "Post navigation"
+msgstr "Post navigation"
+
+#: patterns/query-loop-list.php:3
+msgctxt "Pattern title"
+msgid "Query Loop List"
+msgstr "Query Loop List"
+
+#: patterns/query-loop.php:3
+msgctxt "Pattern title"
+msgid "Query Loop"
+msgstr "Query Loop"
+
+#: patterns/salon-section-v2.php:3
+msgctxt "Pattern title"
+msgid "Salon Section (v2)"
+msgstr "Salon Section (v2)"
+
+#: patterns/salon-section-v2.php:18
+msgid "About"
+msgstr "About"
+
+#: patterns/salon-section-v2.php:22 patterns/salon-section.php:14
 msgid "About the salon"
 msgstr "サロンについて"
 
-#: patterns/salon-section.php:18
+#: patterns/salon-section-v2.php:26 patterns/salon-section.php:20
 msgid ""
 "We value the individuality and beauty of each customer, and will propose "
 "hairstyles incorporating the latest trends and techniques. Please enjoy a "
@@ -394,60 +630,94 @@ msgstr ""
 "アスタイルをご提案いたします。リラックスできる空間で、心地よいサロンタイムを"
 "お過ごしください。"
 
-#: patterns/salon-section.php:33
+#: patterns/salon-section-v2.php:30
+msgid "See our menu"
+msgstr "メニューを見る"
+
+#: patterns/salon-section-v2.php:46 patterns/salon-section.php:35
 msgid "High technical capabilities"
 msgstr "高い技術力"
 
-#: patterns/salon-section.php:37
+#: patterns/salon-section-v2.php:50 patterns/salon-section.php:39
 msgid "Experienced stylists with the latest technology"
 msgstr "経験豊富なスタイリストが最新技術でお応えします"
 
-#: patterns/salon-section.php:51
+#: patterns/salon-section-v2.php:66 patterns/salon-section.php:53
 msgid "High-quality space"
 msgstr "上質な空間"
 
-#: patterns/salon-section.php:55
+#: patterns/salon-section-v2.php:70 patterns/salon-section.php:57
 msgid "You can relax in a calm atmosphere."
 msgstr "落ち着いた雰囲気でリラックスしてお過ごしいただけます"
 
-#: patterns/salon-section.php:69
+#: patterns/salon-section-v2.php:86 patterns/salon-section.php:71
 msgid "Careful counseling"
 msgstr "丁寧なカウンセリング"
 
-#: patterns/salon-section.php:73
+#: patterns/salon-section-v2.php:90 patterns/salon-section.php:75
 msgid ""
 "We listen to your requests in detail and suggest the best style for you."
 msgstr "お客様のご要望を詳しくお聞きし、最適なスタイルを提案"
 
-#: patterns/search-header.php:15
+#: patterns/salon-section.php:3
+msgctxt "Pattern title"
+msgid "Salon Section"
+msgstr "Salon Section"
+
+#: patterns/salon-section.php:14
+msgid "ABOUT"
+msgstr "ABOUT"
+
+#: patterns/search-form.php:3
+msgctxt "Pattern title"
+msgid "Search Form"
+msgstr "Search Form"
+
+#: patterns/search-header.php:3
+msgctxt "Pattern title"
+msgid "Search Header"
+msgstr "Search Header"
+
+#: patterns/search-header.php:17
 msgid "Search"
 msgstr "検索"
 
-#: patterns/search-header.php:15
+#: patterns/search-header.php:17
 msgid "Search Results"
 msgstr "検索結果"
 
-#: patterns/staff-section.php:14
+#: patterns/single-post.php:3
+msgctxt "Pattern title"
+msgid "Single Post"
+msgstr "Single Post"
+
+#: patterns/staff-section-v2.php:3
+msgctxt "Pattern title"
+msgid "Staff Section (v2)"
+msgstr "Staff Section (v2)"
+
+#: patterns/staff-section-v2.php:19 patterns/staff-section.php:16
 msgid "STAFF"
 msgstr "STAFF"
 
-#: patterns/staff-section.php:14
+#: patterns/staff-section-v2.php:23 patterns/staff-section.php:16
 msgid "Staff Introduction"
 msgstr "スタッフ紹介"
 
-#: patterns/staff-section.php:22 patterns/staff-section.php:42
+#: patterns/staff-section-v2.php:37 patterns/staff-section-v2.php:77
+#: patterns/staff-section.php:24 patterns/staff-section.php:44
 msgid "Staff Image"
 msgstr "スタッフ画像"
 
-#: patterns/staff-section.php:26
-msgid "Miho Tanaka"
-msgstr "Miho Tanaka"
-
-#: patterns/staff-section.php:30
+#: patterns/staff-section-v2.php:47 patterns/staff-section.php:32
 msgid "Chief Stylist"
 msgstr "チーフスタイリスト"
 
-#: patterns/staff-section.php:34
+#: patterns/staff-section-v2.php:51 patterns/staff-section.php:28
+msgid "Miho Tanaka"
+msgstr "Miho Tanaka"
+
+#: patterns/staff-section-v2.php:55 patterns/staff-section.php:36
 msgid ""
 "A veteran stylist with 15 years of experience, she is good at proposing "
 "styles that are in line with the latest trends."
@@ -455,15 +725,15 @@ msgstr ""
 "15年の経験を持つベテランスタイリスト。トレンドを押さえたスタイル提案が得意で"
 "す。"
 
-#: patterns/staff-section.php:46
-msgid "Ken Sato"
-msgstr "Ken Sato"
-
-#: patterns/staff-section.php:50
+#: patterns/staff-section-v2.php:87 patterns/staff-section.php:52
 msgid "stylist"
 msgstr "スタイリスト"
 
-#: patterns/staff-section.php:54
+#: patterns/staff-section-v2.php:91 patterns/staff-section.php:48
+msgid "Ken Sato"
+msgstr "Ken Sato"
+
+#: patterns/staff-section-v2.php:95 patterns/staff-section.php:56
 msgid ""
 "Specialists in mens haircuts and coloring, offering styles to suit your "
 "lifestyle."
@@ -471,96 +741,125 @@ msgstr ""
 "メンズカットとカラーリングのスペシャリスト。お客様のライフスタイルに合わせた"
 "スタイルを提案。"
 
-#: patterns/tag-header.php:17
+#: patterns/staff-section.php:3
+msgctxt "Pattern title"
+msgid "Staff Section"
+msgstr "Staff Section"
+
+#: patterns/tag-header.php:3
+msgctxt "Pattern title"
+msgid "Tag Header"
+msgstr "Tag Header"
+
+#: patterns/tag-header.php:19
 msgid "Tag"
 msgstr "タグ"
 
-# theme.json strings (translated with gettext context, see wp-includes/theme-i18n.json)
+#: theme.json
+msgctxt "Gradient name"
+msgid "Ivory Gradient"
+msgstr "アイボリーグラデーション"
 
 #: theme.json
+msgctxt "Gradient name"
+msgid "Gold Gradient"
+msgstr "ゴールドグラデーション"
+
+# theme.json strings (translated with gettext context, see wp-includes/theme-i18n.json)
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Primary"
 msgstr "プライマリ"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Secondary"
 msgstr "セカンダリ"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Tertiary"
 msgstr "ターシャリ"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Accent"
 msgstr "アクセント"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Primary Dark"
 msgstr "プライマリダーク"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Light Gray"
 msgstr "ライトグレー"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Text Main"
 msgstr "テキストメイン"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Text Sub"
 msgstr "テキストサブ"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Back Light"
 msgstr "バックライト"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "White"
 msgstr "ホワイト"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Black"
 msgstr "ブラック"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Yellow"
 msgstr "イエロー"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Red"
 msgstr "レッド"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Text Light"
 msgstr "テキストライト"
 
-#: theme.json
+#: theme.json styles/classic-rose.json styles/monochrome.json
 msgctxt "Color name"
 msgid "Primary Light"
 msgstr "プライマリライト"
 
-#: theme.json
-msgctxt "Gradient name"
-msgid "Gray Gradient"
-msgstr "グレイグラデーション"
+#: theme.json styles/classic-rose.json styles/monochrome.json
+msgctxt "Color name"
+msgid "Hairline"
+msgstr "ヘアライン"
+
+#: theme.json styles/classic-rose.json styles/monochrome.json
+msgctxt "Color name"
+msgid "Hairline Soft"
+msgstr "ヘアライン ソフト"
 
 #: theme.json
-msgctxt "Gradient name"
-msgid "Sky Gradient"
-msgstr "スカイグラデーション"
+msgctxt "Font family name"
+msgid "Display Serif"
+msgstr "ディスプレイセリフ"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Body Sans"
+msgstr "ボディサンセリフ"
 
 #: theme.json
 msgctxt "Font family name"
@@ -578,6 +877,101 @@ msgid "Serif"
 msgstr "英字セリフ"
 
 #: theme.json
+msgctxt "Font size name"
+msgid "XSmall"
+msgstr "XSmall"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Small"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Medium"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Large"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XLarge"
+msgstr "XLarge"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2XLarge"
+msgstr "2XLarge"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "3XLarge"
+msgstr "3XLarge"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "4XLarge"
+msgstr "4XLarge"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "5XLarge"
+msgstr "5XLarge"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "10"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "20"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "30"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "40"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "50"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "60"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "70"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "80"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "120"
+msgstr ""
+
+#: theme.json
 msgctxt "Template part name"
 msgid "Header"
 msgstr "ヘッダー"
@@ -587,30 +981,48 @@ msgctxt "Template part name"
 msgid "Footer"
 msgstr "フッター"
 
+#: styles/classic-rose.json
+msgctxt "Style variation name"
+msgid "Classic Rose"
+msgstr "クラシックローズ"
+
+#: styles/classic-rose.json
+msgctxt "Gradient name"
+msgid "Rose Gradient"
+msgstr "ローズグラデーション"
+
+#: styles/classic-rose.json
+msgctxt "Gradient name"
+msgid "Dusk Gradient"
+msgstr "ダスクグラデーション"
+
+#: styles/monochrome.json
+msgctxt "Style variation name"
+msgid "Monochrome"
+msgstr "モノクロ"
+
+#: styles/monochrome.json
+msgctxt "Gradient name"
+msgid "Gray Gradient"
+msgstr "グレイグラデーション"
+
+#: styles/monochrome.json
+msgctxt "Gradient name"
+msgid "Charcoal Gradient"
+msgstr "チャコールグラデーション"
+
+#~ msgctxt "Gradient name"
+#~ msgid "Sky Gradient"
+#~ msgstr "スカイグラデーション"
 
 #~ msgid "Business hours"
 #~ msgstr "営業時間"
 
-#~ msgid "10:00"
-#~ msgstr "10:00"
-
-#~ msgid "20:00"
-#~ msgstr "20:00"
-
 #~ msgid "Closed Day"
 #~ msgstr "定休日"
 
-#~ msgid "Tue"
-#~ msgstr "火曜日"
-
 #~ msgid "Nearest station"
 #~ msgstr "最寄り駅"
-
-#~ msgid "Meiji Jingu-mae 4-minute walk"
-#~ msgstr "明治神宮前徒歩4分"
-
-#~ msgid "TOP"
-#~ msgstr "トップ"
 
 #~ msgid "Enyoi Header Menu"
 #~ msgstr "Enyoi ヘッダーメニュー"

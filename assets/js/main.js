@@ -64,11 +64,27 @@ function smoothScroll() {
     });
 }
 
+// 固定ヘッダー (enyoi/header-v2) のスクロール時の背景切り替え
+function observeNavScroll() {
+    const nav = document.querySelector(".eny-nav");
+    if (!nav) {
+        return;
+    }
+
+    const update = () => {
+        nav.classList.toggle("is-scrolled", window.scrollY > 40);
+    };
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector("header");
     if (header) {
         observeHeaderBlockSize.observe(header);
     }
     observeElements();
+    observeNavScroll();
     smoothScroll();
 });

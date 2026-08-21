@@ -1,0 +1,1045 @@
+/**
+ * Enyoi 2.0 パターン用スタイル (enyoi/*-v2)
+ *
+ * 旧パターン (custom.css) とはクラス名が衝突しないよう eny- 接頭辞で分離。
+ * 色は theme.json の preset / custom 変数のみを参照しているので、
+ * styles/*.json のスタイルバリエーションにそのまま追従する。
+ */
+
+:root {
+	--eny-ground: var(--wp--preset--color--back-light);
+	--eny-paper: var(--wp--preset--color--white);
+	--eny-ink: var(--wp--preset--color--text-main);
+	--eny-ink-muted: var(--wp--preset--color--text-light);
+	--eny-gold: var(--wp--preset--color--primary);
+	--eny-gold-deep: var(--wp--preset--color--secondary);
+	--eny-gold-bright: var(--wp--preset--color--accent);
+	--eny-hairline: var(--wp--preset--color--hairline);
+	--eny-hairline-soft: var(--wp--preset--color--hairline-soft);
+
+	--eny-gold-tint: var(--wp--custom--color--gold-tint, rgba(115, 92, 0, 0.1));
+	--eny-gold-line: var(--wp--custom--color--gold-line, rgba(115, 92, 0, 0.3));
+	--eny-gold-edge: var(--wp--custom--color--gold-edge, rgba(115, 92, 0, 0.4));
+	--eny-rule-soft: var(--wp--custom--color--rule-soft, rgba(127, 118, 99, 0.35));
+	--eny-nav-bg: var(--wp--custom--color--nav-bg, rgba(252, 249, 248, 0.96));
+	--eny-scrim: var(--wp--custom--color--scrim, rgba(252, 249, 248, 0.42));
+	--eny-wash: var(--wp--custom--color--wash, rgba(212, 175, 55, 0.22));
+	--eny-ph-a: var(--wp--custom--color--ph-a, #f6f2ec);
+	--eny-ph-b: var(--wp--custom--color--ph-b, #e8e1d4);
+
+	--eny-f-bg: var(--wp--preset--color--primary-dark);
+	--eny-f-ink: var(--wp--preset--color--text-sub);
+	--eny-f-gold: var(--wp--preset--color--primary-light);
+	--eny-f-muted: var(--wp--custom--color--footer-muted, rgba(243, 239, 228, 0.72));
+	--eny-f-rule: var(--wp--custom--color--footer-rule, rgba(233, 195, 73, 0.28));
+	--eny-f-rule-soft: var(--wp--custom--color--footer-rule-soft, rgba(243, 239, 228, 0.14));
+
+	--eny-display: var(--wp--preset--font-family--display-serif);
+	--eny-body: var(--wp--preset--font-family--body-sans);
+	--eny-radius: 2px;
+	--eny-container: 1200px;
+	--eny-gutter: 16px;
+	--eny-section: clamp(72px, 10vw, 120px);
+	--eny-nav-h: 88px;
+}
+
+@media (min-width: 768px) {
+	:root {
+		--eny-gutter: 64px;
+	}
+}
+
+/* ---------- 共通 ---------- */
+
+.eny-container {
+	width: 100%;
+	max-width: var(--eny-container);
+	margin-inline: auto;
+	padding-inline: var(--eny-gutter);
+}
+
+.eny-eyebrow {
+	font-family: var(--eny-body);
+	font-size: var(--wp--preset--font-size--small);
+	line-height: 20px;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--eny-gold);
+}
+
+.eny-display {
+	font-family: var(--eny-display);
+	font-size: clamp(36px, 5.4vw, 48px);
+	line-height: 1.16;
+	letter-spacing: -0.02em;
+	font-weight: 600;
+}
+
+.eny-headline {
+	font-family: var(--eny-display);
+	font-size: clamp(28px, 3.6vw, 32px);
+	line-height: 1.25;
+	font-weight: 500;
+}
+
+.eny-title {
+	font-family: var(--eny-display);
+	font-size: var(--wp--preset--font-size--x-large);
+	line-height: 1.4;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+
+.eny-lede {
+	font-size: var(--wp--preset--font-size--large);
+	line-height: 28px;
+	color: var(--eny-ink-muted);
+}
+
+.eny-body {
+	font-size: var(--wp--preset--font-size--medium);
+	line-height: 24px;
+	color: var(--eny-ink-muted);
+}
+
+/* 電話番号・営業時間・価格など、桁を揃えたい数字に付ける */
+.eny-price {
+	font-variant-numeric: tabular-nums;
+}
+
+/* 見出しの既定マージンを打ち消す (style.css の h2/h3 ルール対策) */
+.eny-section h2.wp-block-heading,
+.eny-section h3.wp-block-heading,
+.eny-section h4.wp-block-heading {
+	margin-bottom: 0;
+}
+
+/* ---------- ボタン / リンク ---------- */
+
+.eny-btn-ghost .wp-block-button__link {
+	background-color: transparent;
+	color: var(--eny-gold);
+	border: 1px solid var(--eny-gold);
+	padding: 0.75rem 1.5rem;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.eny-btn-ghost .wp-block-button__link:hover,
+.eny-btn-ghost .wp-block-button__link:focus {
+	background-color: var(--eny-gold);
+	color: var(--eny-paper);
+}
+
+.eny-link-gold a,
+a.eny-link-gold {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--eny-gold);
+	border-bottom: 1px solid var(--eny-gold);
+	padding-bottom: 4px;
+	text-decoration: none;
+	transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.eny-link-gold a:hover,
+.eny-link-gold a:focus,
+a.eny-link-gold:hover,
+a.eny-link-gold:focus {
+	color: var(--eny-gold-deep);
+	border-bottom-color: var(--eny-gold-deep);
+	text-decoration: none;
+}
+
+/* ---------- ヘッダー ---------- */
+
+.eny-nav {
+	position: fixed;
+	/* 管理バー表示時はコアが --wp-admin--admin-bar--height を出力する */
+	top: var(--wp-admin--admin-bar--height, 0px);
+	right: 0;
+	left: 0;
+	z-index: 100;
+	border-bottom: 1px solid transparent;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* main.js が .is-scrolled を付ける経路 */
+.eny-nav.is-scrolled {
+	background-color: var(--eny-nav-bg);
+	-webkit-backdrop-filter: blur(12px);
+	backdrop-filter: blur(12px);
+	border-bottom-color: var(--eny-hairline);
+	box-shadow: 0 1px 12px rgb(0 0 0 / 6%);
+}
+
+/* JS が動かない場合の保険。スクロール駆動アニメーションで同じ状態にする。
+   対応ブラウザでは JS の有無にかかわらずこちらで色が付く */
+@supports (animation-timeline: scroll()) {
+	.eny-nav {
+		/* animation ショートハンドは animation-duration を 0s に戻してしまい、
+		   スクロール駆動タイムラインが効かなくなる。必ずロングハンドで書く */
+		animation-name: eny-nav-scrolled;
+		animation-duration: auto;
+		animation-timing-function: linear;
+		animation-fill-mode: both;
+		animation-timeline: scroll(root block);
+		animation-range: 0 120px;
+	}
+
+	@keyframes eny-nav-scrolled {
+		from {
+			background-color: transparent;
+			border-bottom-color: transparent;
+			box-shadow: 0 1px 12px rgb(0 0 0 / 0%);
+		}
+
+		to {
+			background-color: var(--eny-nav-bg);
+			border-bottom-color: var(--eny-hairline);
+			box-shadow: 0 1px 12px rgb(0 0 0 / 6%);
+		}
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.eny-nav {
+		transition: none;
+	}
+}
+
+.eny-nav__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	padding-block: 20px;
+}
+
+/* リファレンス (new/index.html) のブランド名は 32px。
+   theme.json の core/site-title は旧ヘッダーと共用なので、ここで v2 だけ上書きする */
+.eny-nav .eny-nav__brand {
+	margin: 0;
+	font-family: var(--eny-display);
+	font-size: var(--wp--preset--font-size--3-x-large);
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	line-height: 1.2;
+}
+
+.eny-nav .eny-nav__brand a {
+	text-decoration: none;
+}
+
+/* theme.json の core/navigation は small (14px)。v2 のヘッダーだけ大きくする。
+   ラッパーと a の両方に指定して、継承・上書きどちらでも効くようにする */
+.eny-nav .eny-nav__links,
+.eny-nav .eny-nav__links .wp-block-navigation-item__label {
+	font-size: var(--wp--preset--font-size--medium);
+}
+
+.eny-nav__links .wp-block-navigation-item a {
+	padding: 0 0 4px;
+	font-size: var(--wp--preset--font-size--medium);
+	border-bottom: 1px solid transparent;
+	transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.eny-nav__links .wp-block-navigation-item a:hover {
+	border-bottom-color: var(--eny-gold);
+	text-decoration: none;
+}
+
+.eny-btn-nav .wp-block-button__link {
+	padding: 0.75rem 1.5rem;
+	font-size: var(--wp--preset--font-size--medium);
+}
+
+/* 固定ヘッダー分の余白。ヒーローを持たないテンプレートで使う */
+.eny-main-offset {
+	padding-top: calc(var(--eny-nav-h) + var(--wp-admin--admin-bar--height, 0px));
+}
+
+/* ---------- ヒーロー ---------- */
+
+.eny-hero.wp-block-cover {
+	min-height: calc(100svh - var(--wp-admin--admin-bar--height, 0px));
+	padding: 0;
+	align-items: stretch;
+}
+
+/* core/cover は .wp-block-cover:not(.has-text-color) に color: #fff を当てる。
+   パターン側で textColor を持たせているが、色を外された場合の保険として
+   コアより詳細度の高いセレクタで指定しておく */
+.wp-block-cover.eny-hero,
+.wp-block-cover.eny-hero .wp-block-cover__inner-container {
+	color: var(--eny-ink);
+}
+
+.eny-hero .wp-block-cover__image-background {
+	opacity: 0.85;
+}
+
+.eny-hero .wp-block-cover__background {
+	-webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
+}
+
+.eny-hero .wp-block-cover__inner-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.eny-hero__inner {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 24px;
+	padding-block: 140px 40px;
+}
+
+.eny-hero__inner .eny-display {
+	max-width: 16ch;
+}
+
+.eny-hero__inner .eny-lede {
+	max-width: 46ch;
+}
+
+.eny-popular {
+	border-top: 1px solid var(--eny-hairline);
+	margin-bottom: 56px;
+}
+
+.eny-popular__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.eny-popular__list li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	padding: 20px 8px;
+	border-left: 1px solid var(--eny-hairline);
+}
+
+.eny-popular__list li:first-child {
+	border-left: 0;
+}
+
+.eny-popular__name {
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--eny-ink-muted);
+}
+
+.eny-popular__price {
+	display: block;
+	color: var(--eny-ink);
+	font-family: var(--eny-display);
+	font-size: var(--wp--preset--font-size--x-large);
+	font-weight: 500;
+	font-variant-numeric: tabular-nums;
+}
+
+/* ---------- セクション ---------- */
+
+.eny-section {
+	padding-block: var(--eny-section);
+	background-color: var(--eny-ground);
+}
+
+.eny-section--paper {
+	background-color: var(--eny-paper);
+}
+
+.eny-section-head {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-bottom: 56px;
+}
+
+/* ---------- サロン紹介 ---------- */
+
+.eny-grid12 {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 40px;
+}
+
+.eny-about__intro {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: flex-start;
+}
+
+.eny-features {
+	display: flex;
+	flex-direction: column;
+}
+
+.eny-feature {
+	display: grid;
+	grid-template-columns: 40px 1fr;
+	gap: 20px;
+	padding-block: 28px;
+	border-top: 1px solid var(--eny-hairline-soft);
+}
+
+.eny-feature:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.eny-feature__mark {
+	width: 40px;
+	height: 40px;
+	display: grid;
+	place-items: center;
+	border: 1px solid var(--eny-hairline);
+	border-radius: var(--eny-radius);
+	color: var(--eny-gold);
+}
+
+.eny-feature__mark svg {
+	width: 18px;
+	height: 18px;
+}
+
+.eny-feature__body {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+@media (min-width: 900px) {
+	.eny-grid12 {
+		grid-template-columns: repeat(12, 1fr);
+		gap: 24px;
+	}
+
+	.eny-about__intro {
+		grid-column: 1 / span 5;
+	}
+
+	.eny-about__features {
+		grid-column: 7 / span 6;
+	}
+}
+
+/* ---------- アクセス ---------- */
+
+.eny-access__list {
+	border-top: 1px solid var(--eny-hairline);
+}
+
+.eny-access__row {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 4px;
+	padding-block: 20px;
+	border-bottom: 1px solid var(--eny-hairline-soft);
+}
+
+.eny-access__term {
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--eny-gold);
+}
+
+.eny-access__desc {
+	font-size: var(--wp--preset--font-size--medium);
+	line-height: 24px;
+	color: var(--eny-ink-muted);
+}
+
+.eny-access__map {
+	aspect-ratio: 4 / 3;
+	display: grid;
+	place-items: center;
+	align-content: center;
+	gap: 12px;
+	background-image: linear-gradient(160deg, var(--eny-ph-a) 0%, var(--eny-ph-b) 100%);
+	border: 1px solid var(--eny-hairline-soft);
+	border-radius: var(--eny-radius);
+	color: var(--eny-hairline);
+	overflow: hidden;
+}
+
+.eny-access__map svg {
+	width: 48px;
+	height: 48px;
+}
+
+.eny-access__map-label {
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--eny-ink-muted);
+	opacity: 0.6;
+}
+
+/* 地図の埋め込みブロックを差し込んだ場合は枠いっぱいに敷く */
+.eny-access__map .wp-block-embed,
+.eny-access__map iframe {
+	grid-area: 1 / 1;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	border: 0;
+}
+
+/* Enyoi Store Info プラグインの出力。プラグイン側のスタイルを尊重しつつ、
+   文字色と行間だけテーマに寄せる */
+.eny-access-plugin {
+	color: var(--eny-ink-muted);
+}
+
+.eny-access-plugin a {
+	color: var(--eny-gold);
+}
+
+@media (min-width: 900px) {
+	.eny-access__list {
+		grid-column: 1 / span 6;
+	}
+
+	.eny-access__map {
+		grid-column: 8 / span 5;
+	}
+}
+
+/* ---------- メニュー ---------- */
+
+.eny-menu-cat {
+	margin-bottom: var(--eny-section);
+}
+
+.eny-menu-cat:last-child {
+	margin-bottom: 0;
+}
+
+.eny-menu-cat__title {
+	display: flex;
+	align-items: baseline;
+	gap: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid var(--eny-gold-line);
+	margin-bottom: 40px;
+}
+
+.eny-menu-cat__rule {
+	flex: 1;
+	height: 1px;
+	background-color: var(--eny-hairline-soft);
+}
+
+.eny-menu__price {
+	font-family: var(--eny-display);
+	font-size: var(--wp--preset--font-size--x-large);
+	font-weight: 500;
+	color: var(--eny-gold);
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+.eny-svc-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 24px;
+}
+
+.eny-svc-card {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 32px;
+	background-color: var(--eny-paper);
+	border: 1px solid var(--eny-hairline-soft);
+	border-radius: var(--eny-radius);
+	transition: border-color 0.3s ease;
+}
+
+.eny-svc-card:hover {
+	border-color: var(--eny-gold-edge);
+}
+
+.eny-svc-card__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 16px;
+}
+
+.eny-svc-list {
+	display: flex;
+	flex-direction: column;
+	max-width: 880px;
+}
+
+.eny-svc-row {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 8px;
+	padding: 20px 16px;
+	margin-inline: -16px;
+	border-bottom: 1px solid var(--eny-hairline-soft);
+	border-radius: var(--eny-radius);
+	transition: background-color 0.2s ease;
+}
+
+.eny-svc-row:hover {
+	background-color: var(--eny-paper);
+}
+
+.eny-interstitial {
+	height: 400px;
+	margin-bottom: var(--eny-section);
+	overflow: hidden;
+	border-radius: var(--eny-radius);
+	background-image: linear-gradient(140deg, var(--eny-ph-a) 0%, var(--eny-ph-b) 55%, var(--eny-wash) 100%);
+}
+
+.eny-interstitial img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (min-width: 640px) {
+	.eny-svc-row {
+		grid-template-columns: 1fr auto;
+		gap: 8px 32px;
+		align-items: center;
+	}
+
+	.eny-svc-row__desc {
+		grid-column: 1;
+	}
+
+	.eny-svc-row__price {
+		grid-row: 1 / span 2;
+		grid-column: 2;
+		align-self: center;
+		text-align: right;
+	}
+}
+
+@media (min-width: 900px) {
+	.eny-svc-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* ---------- スタッフ ---------- */
+
+.eny-staff {
+	display: flex;
+	flex-direction: column;
+	gap: 72px;
+}
+
+.eny-staff__row {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 24px;
+}
+
+.eny-staff__figure {
+	position: relative;
+	isolation: isolate;
+}
+
+/* 写真の裏に同じ大きさのゴールドを敷いてずらす。
+   写真ブロックを差し込んでも左下に額縁のように残る */
+.eny-staff__figure::after {
+	content: "";
+	position: absolute;
+	left: -20px;
+	bottom: -20px;
+	width: 100%;
+	height: 100%;
+	background-color: var(--eny-gold-bright);
+	opacity: 0.18;
+	border-radius: var(--eny-radius);
+	z-index: -1;
+}
+
+.eny-staff__photo {
+	aspect-ratio: 3 / 4;
+	display: grid;
+	place-items: center;
+	align-content: center;
+	gap: 12px;
+	background-image: linear-gradient(160deg, var(--eny-ph-a) 0%, var(--eny-ph-b) 100%);
+	border: 1px solid var(--eny-hairline-soft);
+	border-radius: var(--eny-radius);
+	color: var(--eny-hairline);
+	overflow: hidden;
+}
+
+.eny-staff__photo svg {
+	width: 48px;
+	height: 48px;
+}
+
+.eny-staff__placeholder-label {
+	font-size: var(--wp--preset--font-size--x-small);
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--eny-ink-muted);
+	opacity: 0.6;
+}
+
+/* 写真ブロックを差し込んだ場合は枠いっぱいに敷く */
+.eny-staff__photo .wp-block-image,
+.eny-staff__photo figure {
+	grid-area: 1 / 1;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.eny-staff__photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.eny-staff__body {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.eny-staff__role {
+	display: inline-block;
+	padding: 5px 14px;
+	background-color: var(--eny-gold-tint);
+	border-radius: var(--eny-radius);
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--eny-gold);
+}
+
+.eny-staff__name {
+	color: var(--eny-gold);
+}
+
+.eny-staff__bio {
+	border-left: 1px solid var(--eny-rule-soft);
+	padding-left: 16px;
+}
+
+@media (min-width: 900px) {
+	.eny-staff {
+		gap: 120px;
+	}
+
+	.eny-staff__row {
+		grid-template-columns: repeat(12, 1fr);
+		align-items: center;
+	}
+
+	.eny-staff__figure {
+		grid-column: 2 / span 5;
+		grid-row: 1;
+	}
+
+	.eny-staff__body {
+		grid-column: 7 / span 5;
+		grid-row: 1;
+		margin-left: -32px;
+	}
+
+	.eny-staff__row--flip .eny-staff__figure {
+		grid-column: 6 / span 5;
+	}
+
+	.eny-staff__row--flip .eny-staff__body {
+		grid-column: 2 / span 5;
+		margin-left: 0;
+		margin-right: -32px;
+		text-align: right;
+		align-items: flex-end;
+	}
+
+	.eny-staff__row--flip .eny-staff__figure::after {
+		left: auto;
+		right: -20px;
+	}
+
+	.eny-staff__row--flip .eny-staff__bio {
+		border-left: 0;
+		border-right: 1px solid var(--eny-rule-soft);
+		padding-left: 0;
+		padding-right: 16px;
+	}
+}
+
+/* ---------- お知らせ ---------- */
+
+.eny-news__list {
+	border-top: 1px solid var(--eny-hairline);
+}
+
+.eny-news__item {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 8px;
+	padding-block: 32px;
+	border-bottom: 1px solid var(--eny-hairline-soft);
+}
+
+.eny-news__date {
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	color: var(--eny-gold);
+	font-variant-numeric: tabular-nums;
+}
+
+.eny-news__body {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+/* theme.json の core/post-title は 2.5rem。一覧では見出しサイズに落とす */
+.eny-news__body .wp-block-post-title {
+	font-family: var(--eny-display);
+	font-size: var(--wp--preset--font-size--x-large);
+	line-height: 1.4;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+
+.eny-news__body .wp-block-post-excerpt__more-text {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.eny-news__item {
+		grid-template-columns: 140px 1fr auto;
+		gap: 32px;
+		align-items: baseline;
+	}
+}
+
+/* ---------- 予約 ---------- */
+
+.eny-reserve {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 24px;
+}
+
+.eny-reserve__card {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	align-items: flex-start;
+	padding: 40px;
+	background-color: var(--eny-paper);
+	border: 1px solid var(--eny-hairline-soft);
+	border-radius: var(--eny-radius);
+}
+
+/* 白地のセクションに置かれた場合はカード側をアイボリーにして沈ませない */
+.eny-section--paper .eny-reserve__card {
+	background-color: var(--eny-ground);
+}
+
+.eny-reserve__icon {
+	color: var(--eny-gold);
+	line-height: 0;
+}
+
+.eny-reserve__icon svg {
+	width: 24px;
+	height: 24px;
+}
+
+.eny-reserve__value {
+	font-family: var(--eny-display);
+	font-size: 1.75rem;
+	font-weight: 500;
+	font-variant-numeric: tabular-nums;
+}
+
+.eny-reserve__hours {
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--eny-ink-muted);
+}
+
+@media (min-width: 768px) {
+	.eny-reserve {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* ---------- フッター ---------- */
+
+.eny-footer {
+	background-color: var(--eny-f-bg);
+	color: var(--eny-f-ink);
+	border-top: 1px solid var(--eny-f-rule);
+}
+
+.eny-footer .eny-eyebrow {
+	color: var(--eny-f-gold);
+}
+
+.eny-footer .eny-body,
+.eny-footer__info {
+	color: var(--eny-f-muted);
+}
+
+.eny-footer__grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 48px;
+	padding-block: var(--eny-section);
+}
+
+/* ヘッダーのブランド名と同じ大きさに揃える (リファレンスは 32px) */
+.eny-footer__brand {
+	font-family: var(--eny-display);
+	font-size: var(--wp--preset--font-size--3-x-large);
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	line-height: 1.2;
+	margin-bottom: 16px;
+	color: var(--eny-f-ink);
+}
+
+.eny-footer__desc {
+	max-width: 40ch;
+}
+
+.eny-footer__col {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.eny-footer__col .wp-block-navigation {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.eny-footer__col .wp-block-navigation-item a {
+	padding: 0;
+	color: var(--eny-f-muted);
+	transition: color 0.3s ease;
+}
+
+.eny-footer__col .wp-block-navigation-item a:hover {
+	color: var(--eny-f-gold);
+	text-decoration: none;
+}
+
+.eny-footer__info {
+	font-size: var(--wp--preset--font-size--medium);
+	line-height: 24px;
+}
+
+.eny-footer__bottom {
+	border-top: 1px solid var(--eny-f-rule-soft);
+	padding-block: 24px;
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--eny-f-muted);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 24px;
+	justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+	.eny-footer__grid {
+		grid-template-columns: 2fr 1fr 1fr;
+		gap: 24px;
+	}
+}
+
+/* ---------- ブロック出力に合わせた調整 ---------- */
+
+.eny-staff__photo .wp-block-image,
+.eny-interstitial .wp-block-image {
+	width: 100%;
+	height: 100%;
+}
+
+.eny-staff__photo figure,
+.eny-interstitial figure {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.eny-footer__col p {
+	margin: 0;
+}
+
+.eny-footer__col p a {
+	color: var(--eny-f-muted);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.eny-footer__col p a:hover,
+.eny-footer__col p a:focus {
+	color: var(--eny-f-gold);
+	text-decoration: none;
+}
+
+.eny-news__list .wp-block-post-template {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.eny-news__list .wp-block-post-date a,
+.eny-news__list .wp-block-post-title a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.eny-news__list .wp-block-post-title a:hover,
+.eny-news__list .wp-block-post-title a:focus {
+	color: var(--eny-gold);
+}
+
+.eny-news__list .wp-block-post-excerpt__excerpt {
+	margin: 0;
+}
