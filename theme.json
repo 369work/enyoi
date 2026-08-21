@@ -392,14 +392,6 @@
                     "lineHeight": "1.25"
                 }
             },
-            "core/group": {
-                "spacing": {
-                    "padding": {
-                        "top": "0",
-                        "bottom": "0"
-                    }
-                }
-            },
             "core/separator": {
                 "color": {
                     "text": "var:preset|color|hairline"

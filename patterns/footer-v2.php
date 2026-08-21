@@ -12,8 +12,8 @@
 <div class="wp-block-group alignfull eny-footer">
 	<!-- wp:group {"className":"eny-container eny-footer__grid","layout":{"type":"default"}} -->
 	<div class="wp-block-group eny-container eny-footer__grid">
-		<!-- wp:group {"layout":{"type":"default"}} -->
-		<div class="wp-block-group">
+		<!-- wp:group {"className":"eny-footer__intro","layout":{"type":"default"}} -->
+		<div class="wp-block-group eny-footer__intro">
 			<!-- wp:paragraph {"className":"eny-footer__brand"} -->
 			<p class="eny-footer__brand"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></p>
 			<!-- /wp:paragraph -->

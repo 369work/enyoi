@@ -49,9 +49,18 @@
 	}
 }
 
-/* ---------- 共通 ---------- */
+/* ---------- 汎用リセットの打ち消し ---------- */
 
-.eny-container {
+/* editor-style.css / style.css の .wp-block-group { margin: 0 auto } は、
+   flex や grid の子に効くと「内容幅に縮んで中央寄せ」になる。
+   v2 のブロックでは横方向の auto マージンを無効にする。
+   中央寄せが必要な .eny-container はこの直後で auto を 再指定している */
+.wp-block-group[class*="eny-"] {
+	margin-inline: 0;
+}
+
+/* ---------- 共通 ---------- */
+.wp-block-group.eny-container {
 	width: 100%;
 	max-width: var(--eny-container);
 	margin-inline: auto;
@@ -213,7 +222,7 @@ a.eny-link-gold:focus {
 	}
 }
 
-.eny-nav__inner {
+.wp-block-group.eny-nav__inner {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -296,7 +305,7 @@ a.eny-link-gold:focus {
 	width: 100%;
 }
 
-.eny-hero__inner {
+.wp-block-group.eny-hero__inner {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
@@ -315,7 +324,7 @@ a.eny-link-gold:focus {
 	max-width: 46ch;
 }
 
-.eny-popular {
+.wp-block-group.eny-popular {
 	border-top: 1px solid var(--eny-hairline);
 	margin-bottom: 56px;
 }
@@ -360,17 +369,16 @@ a.eny-link-gold:focus {
 }
 
 /* ---------- セクション ---------- */
-
-.eny-section {
+.wp-block-group.eny-section {
 	padding-block: var(--eny-section);
 	background-color: var(--eny-ground);
 }
 
-.eny-section--paper {
+.wp-block-group.eny-section--paper {
 	background-color: var(--eny-paper);
 }
 
-.eny-section-head {
+.wp-block-group.eny-section-head {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
@@ -397,7 +405,7 @@ a.eny-link-gold:focus {
 	flex-direction: column;
 }
 
-.eny-feature {
+.wp-block-group.eny-feature {
 	display: grid;
 	grid-template-columns: 40px 1fr;
 	gap: 20px;
@@ -452,7 +460,7 @@ a.eny-link-gold:focus {
 	border-top: 1px solid var(--eny-hairline);
 }
 
-.eny-access__row {
+.wp-block-group.eny-access__row {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 4px;
@@ -532,8 +540,7 @@ a.eny-link-gold:focus {
 }
 
 /* ---------- メニュー ---------- */
-
-.eny-menu-cat {
+.wp-block-group.eny-menu-cat {
 	margin-bottom: var(--eny-section);
 }
 
@@ -541,7 +548,7 @@ a.eny-link-gold:focus {
 	margin-bottom: 0;
 }
 
-.eny-menu-cat__title {
+.wp-block-group.eny-menu-cat__title {
 	display: flex;
 	align-items: baseline;
 	gap: 16px;
@@ -571,7 +578,7 @@ a.eny-link-gold:focus {
 	gap: 24px;
 }
 
-.eny-svc-card {
+.wp-block-group.eny-svc-card {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
@@ -599,7 +606,7 @@ a.eny-link-gold:focus {
 	max-width: 880px;
 }
 
-.eny-svc-row {
+.wp-block-group.eny-svc-row {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 8px;
@@ -614,7 +621,7 @@ a.eny-link-gold:focus {
 	background-color: var(--eny-paper);
 }
 
-.eny-interstitial {
+.wp-block-group.eny-interstitial {
 	height: 400px;
 	margin-bottom: var(--eny-section);
 	overflow: hidden;
@@ -629,7 +636,7 @@ a.eny-link-gold:focus {
 }
 
 @media (min-width: 640px) {
-	.eny-svc-row {
+	.wp-block-group.eny-svc-row {
 		grid-template-columns: 1fr auto;
 		gap: 8px 32px;
 		align-items: center;
@@ -729,7 +736,7 @@ a.eny-link-gold:focus {
 	object-fit: cover;
 }
 
-.eny-staff__body {
+.wp-block-group.eny-staff__body {
 	position: relative;
 	z-index: 1;
 	display: flex;
@@ -774,7 +781,7 @@ a.eny-link-gold:focus {
 		grid-row: 1;
 	}
 
-	.eny-staff__body {
+.wp-block-group.eny-staff__body {
 		grid-column: 7 / span 5;
 		grid-row: 1;
 		margin-left: -32px;
@@ -784,7 +791,7 @@ a.eny-link-gold:focus {
 		grid-column: 6 / span 5;
 	}
 
-	.eny-staff__row--flip .eny-staff__body {
+	.eny-staff__row--flip .wp-block-group.eny-staff__body {
 		grid-column: 2 / span 5;
 		margin-left: 0;
 		margin-right: -32px;
@@ -811,7 +818,7 @@ a.eny-link-gold:focus {
 	border-top: 1px solid var(--eny-hairline);
 }
 
-.eny-news__item {
+.wp-block-group.eny-news__item {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 8px;
@@ -847,7 +854,7 @@ a.eny-link-gold:focus {
 }
 
 @media (min-width: 768px) {
-	.eny-news__item {
+	.wp-block-group.eny-news__item {
 		grid-template-columns: 140px 1fr auto;
 		gap: 32px;
 		align-items: baseline;
@@ -862,7 +869,7 @@ a.eny-link-gold:focus {
 	gap: 24px;
 }
 
-.eny-reserve__card {
+.wp-block-group.eny-reserve__card {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
@@ -874,7 +881,7 @@ a.eny-link-gold:focus {
 }
 
 /* 白地のセクションに置かれた場合はカード側をアイボリーにして沈ませない */
-.eny-section--paper .eny-reserve__card {
+.eny-section--paper .wp-block-group.eny-reserve__card {
 	background-color: var(--eny-ground);
 }
 
@@ -923,11 +930,17 @@ a.eny-link-gold:focus {
 	color: var(--eny-f-muted);
 }
 
-.eny-footer__grid {
+.wp-block-group.eny-footer__grid {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 48px;
 	padding-block: var(--eny-section);
+}
+
+/* ブランド名と説明文のまとまり。クラスが無いと共通リセットの
+   margin: 0 auto が効いて内容幅に縮むため、明示的にクラスを持たせている */
+.wp-block-group.eny-footer__intro {
+	margin-inline: 0;
 }
 
 /* ヘッダーのブランド名と同じ大きさに揃える (リファレンスは 32px) */
@@ -973,7 +986,7 @@ a.eny-link-gold:focus {
 	line-height: 24px;
 }
 
-.eny-footer__bottom {
+.wp-block-group.eny-footer__bottom {
 	border-top: 1px solid var(--eny-f-rule-soft);
 	padding-block: 24px;
 	font-size: var(--wp--preset--font-size--small);
@@ -985,7 +998,7 @@ a.eny-link-gold:focus {
 }
 
 @media (min-width: 768px) {
-	.eny-footer__grid {
+	.wp-block-group.eny-footer__grid {
 		grid-template-columns: 2fr 1fr 1fr;
 		gap: 24px;
 	}

@@ -1,4 +1,7 @@
-.wp-block-group {
+/* フロント側 style.css と同じく詳細度ゼロのリセットにする。
+   素のクラスセレクタだと後続のパターン用クラスに勝ってしまい、
+   flex コンテナの子が margin:0 auto で中央寄せ・内容幅に縮む */
+:root :where(.wp-block-group) {
     margin: 0 auto;
     padding: 0;
 }
@@ -913,4 +916,12 @@ main {
     font-size: 0.9rem;
     color: #7f8c8d;
     letter-spacing: 1px;
+}
+
+/* 投稿一覧のカードの余白。style.css はフロント専用で
+   エディターには読み込まれないため、同じ指定をこちらにも置く */
+.wp-block-post {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 1rem;
 }
