@@ -84,3 +84,97 @@ function enyoi_noscript_fallback() {
 	echo '<noscript><style>.fade-in { opacity: 1; transform: none; }</style></noscript>';
 }
 add_action( 'wp_head', 'enyoi_noscript_fallback' );
+
+/**
+ * Add the About Enyoi page under Appearance.
+ *
+ * @since 2.2
+ */
+function enyoi_add_about_page() {
+	add_theme_page(
+		__( 'About Enyoi', 'enyoi' ),
+		__( 'About Enyoi', 'enyoi' ),
+		'edit_theme_options',
+		'enyoi-about',
+		'enyoi_render_about_page'
+	);
+}
+add_action( 'admin_menu', 'enyoi_add_about_page' );
+
+/**
+ * Load the About Enyoi page styles on that page only.
+ *
+ * @since 2.2
+ *
+ * @param string $hook_suffix The current admin page.
+ */
+function enyoi_enqueue_about_page_styles( $hook_suffix ) {
+	if ( 'appearance_page_enyoi-about' !== $hook_suffix ) {
+		return;
+	}
+
+	wp_enqueue_style( 'enyoi-admin', ENYOI_THEME_ASSETS . '/css/admin.css', array(), ENYOI_THEME_VERSION );
+}
+add_action( 'admin_enqueue_scripts', 'enyoi_enqueue_about_page_styles' );
+
+/**
+ * Render the About Enyoi page.
+ *
+ * @since 2.2
+ */
+function enyoi_render_about_page() {
+	if ( ! current_user_can( 'edit_theme_options' ) ) {
+		return;
+	}
+
+	$new_tab = '<span class="screen-reader-text">' . esc_html__( '(opens in a new tab)', 'enyoi' ) . '</span>';
+	?>
+	<div class="wrap enyoi-about">
+		<h1><?php esc_html_e( 'About Enyoi', 'enyoi' ); ?></h1>
+		<p class="enyoi-about__lead"><?php esc_html_e( 'Enyoi is a refined block theme for salons, clinics and small business sites. You can edit the templates, patterns and styles from the Site Editor.', 'enyoi' ); ?></p>
+
+		<div class="card">
+			<h2 class="title"><?php esc_html_e( 'Get Started', 'enyoi' ); ?></h2>
+			<p><?php esc_html_e( 'Open the Site Editor to change the front page, header, footer and colors.', 'enyoi' ); ?></p>
+			<p>
+				<a class="button button-primary" href="<?php echo esc_url( admin_url( 'site-editor.php' ) ); ?>">
+					<?php esc_html_e( 'Open the Site Editor', 'enyoi' ); ?>
+				</a>
+			</p>
+		</div>
+
+		<div class="card">
+			<h2 class="title"><?php esc_html_e( 'Review the Enyoi Theme', 'enyoi' ); ?></h2>
+			<p><?php esc_html_e( 'Thank you for using the Enyoi theme! We would love to hear your feedback. Please take a moment to leave a review.', 'enyoi' ); ?></p>
+			<p>
+				<a class="button" href="https://wordpress.org/support/theme/enyoi/reviews/" target="_blank" rel="noopener noreferrer">
+					<?php esc_html_e( 'Leave a Review', 'enyoi' ); ?>
+					<?php echo $new_tab; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
+				</a>
+			</p>
+		</div>
+
+		<div class="card">
+			<h2 class="title"><?php esc_html_e( 'Theme Support', 'enyoi' ); ?></h2>
+			<p><?php esc_html_e( 'Free support for the Enyoi theme is provided on the WordPress.org support forum.', 'enyoi' ); ?></p>
+			<p>
+				<a class="button" href="https://wordpress.org/support/theme/enyoi/" target="_blank" rel="noopener noreferrer">
+					<?php esc_html_e( 'Support Forum', 'enyoi' ); ?>
+					<?php echo $new_tab; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
+				</a>
+			</p>
+			<p><?php esc_html_e( 'Paid customization and paid email support are also available. For details, please contact 369Theme.', 'enyoi' ); ?></p>
+			<p class="enyoi-about__links">
+				<a class="button" href="https://369theme.com/order" target="_blank" rel="noopener noreferrer">
+					<?php esc_html_e( 'Request Customization', 'enyoi' ); ?>
+					<?php echo $new_tab; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
+				</a>
+				<a class="button" href="https://369theme.com/contact?product=enyoi" target="_blank" rel="noopener noreferrer">
+					<?php esc_html_e( 'Contact 369Theme', 'enyoi' ); ?>
+					<?php echo $new_tab; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
+				</a>
+			</p>
+		</div>
+	</div>
+	<?php
+}

@@ -1,14 +1,14 @@
 === Enyoi Theme ===
 
 Theme Name: Enyoi
-Theme URI: https://enyoi.369theme.com/
+Theme URI: https://369theme.com/themes/enyoi
 Contributors: 369work
 Author URI: https://profiles.wordpress.org/369work/
 Tags: blog, portfolio, one-column, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, style-variations, threaded-comments, translation-ready, wide-blocks
 Requires at least: 6.6
 Tested up to: 7.1
-Requires PHP: 8.1
-Stable tag: 2.1
+Requires PHP: 7.4
+Stable tag: 2.2
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -77,11 +77,19 @@ Yes, Enyoi is fully responsive and mobile-friendly.
 
 == Supports ==
 
-* https://369theme.com/theme-enyoi.html
-* You can view documentation and get support on the above site.
+Free support is provided on the WordPress.org support forum: https://wordpress.org/support/theme/enyoi/
+Paid customization is available at https://369theme.com/order
+Paid email support is also available. For details, please contact 369Theme: https://369theme.com/contact?product=enyoi
 
 
 == Changelog ==
+
+= 2.2 =
+* Lowered the minimum PHP version to 7.4
+* Added an About Enyoi page under Appearance with links to the Site Editor, reviews and support (support forum, paid customization, contact)
+* readme.txt: Replaced the support section with the support forum, paid customization and contact links
+* style.css / readme.txt: Updated the Theme URI to https://369theme.com/themes/enyoi
+* style.css: Changed the Author to miroku to match the WordPress.org display name
 
 = 2.1 =
 * style.css / readme.txt: Added the missing Theme URI header

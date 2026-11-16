@@ -1,0 +1,23 @@
+/**
+ * About Enyoi page (Appearance > About Enyoi).
+ *
+ * Loaded on that page only. The page uses the core admin classes
+ * (.card, .button), so this file only adjusts the width and spacing.
+ *
+ * @package Enyoi
+ * @since 2.2
+ */
+
+.enyoi-about .card {
+	max-width: 48rem;
+}
+
+.enyoi-about__lead {
+	max-width: 48rem;
+}
+
+.enyoi-about__links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}

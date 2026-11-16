@@ -1011,6 +1011,66 @@ msgctxt "Gradient name"
 msgid "Charcoal Gradient"
 msgstr "チャコールグラデーション"
 
+#: functions.php
+msgid "About Enyoi"
+msgstr "Enyoi について"
+
+#: functions.php
+msgid "(opens in a new tab)"
+msgstr "（新しいタブで開きます）"
+
+#: functions.php
+msgid "Enyoi is a refined block theme for salons, clinics and small business sites. You can edit the templates, patterns and styles from the Site Editor."
+msgstr "Enyoi は、サロン・クリニック・小規模ビジネスのサイトに向けた上品なブロックテーマです。テンプレート・パターン・スタイルは、サイトエディターから編集できます。"
+
+#: functions.php
+msgid "Get Started"
+msgstr "はじめに"
+
+#: functions.php
+msgid "Open the Site Editor to change the front page, header, footer and colors."
+msgstr "サイトエディターを開くと、トップページ・ヘッダー・フッター・配色を変更できます。"
+
+#: functions.php
+msgid "Open the Site Editor"
+msgstr "サイトエディターを開く"
+
+#: functions.php
+msgid "Review the Enyoi Theme"
+msgstr "Enyoi テーマのレビュー"
+
+#: functions.php
+msgid "Thank you for using the Enyoi theme! We would love to hear your feedback. Please take a moment to leave a review."
+msgstr "Enyoi テーマをご利用いただきありがとうございます！ご意見をお聞かせください。よろしければレビューをお願いします。"
+
+#: functions.php
+msgid "Leave a Review"
+msgstr "レビューする"
+
+#: functions.php
+msgid "Theme Support"
+msgstr "テーマのサポート"
+
+#: functions.php
+msgid "Free support for the Enyoi theme is provided on the WordPress.org support forum."
+msgstr "Enyoi テーマの無料サポートは、WordPress.org のサポートフォーラムで行っています。"
+
+#: functions.php
+msgid "Support Forum"
+msgstr "サポートフォーラム"
+
+#: functions.php
+msgid "Paid customization and paid email support are also available. For details, please contact 369Theme."
+msgstr "有料のカスタマイズと、有料のメールサポートもご利用いただけます。詳しくは 369Theme までお問い合わせください。"
+
+#: functions.php
+msgid "Request Customization"
+msgstr "カスタマイズを依頼する"
+
+#: functions.php
+msgid "Contact 369Theme"
+msgstr "369Theme に問い合わせる"
+
 #~ msgctxt "Gradient name"
 #~ msgid "Sky Gradient"
 #~ msgstr "スカイグラデーション"
